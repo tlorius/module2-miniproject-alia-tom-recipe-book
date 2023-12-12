@@ -2,15 +2,25 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Sidebar from "./components/Sidebar";
+import List from "./components/List";
+import recipeListData from "./dataset/RecipeList.json";
+import { useState } from "react";
 
 function App() {
+  const [recipeList, setRecipeList] = useState(recipeListData);
+
+  const deleteRecipeHandler = (currentId) => {
+
+    setRecipeList(recipeList.filter((currentRecipe) => currentRecipe.id !== currentId))
+  }
+
+
   return (
     <div>
       <Navbar />
       <Sidebar />
+      <List recipeList={recipeList} deleteRecipeHandler={deleteRecipeHandler} />
       <Footer />
-      <h2 id="home">Home Page</h2>
-      <h2 id="about">About Page</h2>
     </div>
   );
 }

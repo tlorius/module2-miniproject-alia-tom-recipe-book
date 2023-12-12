@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 25rem;
+    border: solid black;
+    margin: 10px;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.imageContainer img {
+    width: 100px;
+
+}
+
+.textContainer {}
+
+.highCalories {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
+
+.deleteBtnContainer {
+    align-self: flex-end;
+    margin: 5px;
+
+}
+
+.deleteBtnContainer button {
+    background-color: red;
+    border-radius: 5px;
+    ;
+}
