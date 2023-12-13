@@ -1,8 +1,16 @@
+import classes from "../styles/Sidebar.module.css";
+
 const Sidebar = () => {
   return (
-    <aside>
-      <a href="#home">Home Page</a>
-      <a href="#about">About</a>
+    <aside className={classes.sidebarContainer}>
+      <ul>
+        <li>
+          <a href="#home">Home Page</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+      </ul>
     </aside>
   );
 };

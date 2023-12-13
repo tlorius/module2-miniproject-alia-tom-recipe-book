@@ -1,0 +1,32 @@
+footer {
+  position: fixed;
+  background-color: #2a2e45;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footerImg {
+  height: 2rem;
+}
+
+.footerLink {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.footerLink:hover,
+.footerLink:focus {
+  color: white;
+  text-decoration: none;
+}

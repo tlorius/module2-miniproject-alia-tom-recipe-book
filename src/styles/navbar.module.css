@@ -1,0 +1,36 @@
+.navbar {
+  position: fixed;
+  background-color: #2a2e45;
+  top: 0;
+  width: 100%;
+  color: white;
+  padding: 0.5rem 10rem;
+  text-align: center;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  z-index: 100;
+}
+
+.gitHubImg {
+  height: 1.6rem;
+}
+
+.navbarImage {
+  height: 7rem;
+}
+
+.containerLinks {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.containerLinks:hover,
+.containerLinks:focus {
+  color: white;
+  text-decoration: none;
+}
