@@ -34,3 +34,8 @@
   color: white;
   text-decoration: none;
 }
+
+.navbar h1 {
+  font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 4rem;
+}

@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import classes from "../styles/Sidebar.module.css";
 
 const Sidebar = () => {
@@ -5,10 +6,13 @@ const Sidebar = () => {
     <aside className={classes.sidebarContainer}>
       <ul>
         <li>
-          <a href="#home">Home Page</a>
+          <NavLink to="/">Home Page</NavLink>
         </li>
         <li>
-          <a href="#about">About</a>
+          <NavLink to="/createrecipe">Create New Recipe</NavLink>
+        </li>
+        <li>
+          <NavLink to="/about">About</NavLink>
         </li>
       </ul>
     </aside>
