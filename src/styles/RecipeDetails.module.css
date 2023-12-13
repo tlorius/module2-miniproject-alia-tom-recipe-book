@@ -1,3 +1,7 @@
 .mainContainer {
   margin: 11rem 27rem 6rem 2rem;
 }
+
+.recipeImg {
+  height: 10rem;
+}

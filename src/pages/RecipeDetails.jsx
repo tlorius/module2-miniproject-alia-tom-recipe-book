@@ -8,7 +8,22 @@ const RecipeDetails = ({ recipeList }) => {
     (recipe) => recipe.id === recipeid
   );
   return (
-    <div className={classes.mainContainer}>{currentRecipeDetails.name}</div>
+    <div className={classes.mainContainer}>
+      <h2>{currentRecipeDetails.name}</h2>
+      <img
+        className={classes.recipeImg}
+        src={currentRecipeDetails.image}
+        alt={`${currentRecipeDetails.name}`}
+      />
+      <p>Description: {currentRecipeDetails.description}</p>
+      <p>Duration: {currentRecipeDetails.duration}</p>
+      <p>Servings: {currentRecipeDetails.servings}</p>
+      <p>Ingredients: {currentRecipeDetails.ingredients[0].ingredient}</p>
+
+      {/* need to loop thru steps to cook to create UL with li elements
+      same with the nutritional data 
+      <p>{currentRecipeDetails.stepsToCook}</p>*/}
+    </div>
   );
 };
 

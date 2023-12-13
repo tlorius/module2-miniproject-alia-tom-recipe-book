@@ -7,16 +7,14 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className={classes.navbar}>
-      <h1>
-        <Link to="/">
-          <img
-            className={classes.navbarImage}
-            src={recipeBookLogo}
-            alt="Recipe Book Logo"
-          />
-          Recipe Book
-        </Link>
-      </h1>
+      <Link className={classes.cntLink} to="/">
+        <img
+          className={classes.navbarImage}
+          src={recipeBookLogo}
+          alt="Recipe Book Logo"
+        />
+        <h1 className={classes.h1text}>Recipe Book</h1>
+      </Link>
     </nav>
   );
 };
