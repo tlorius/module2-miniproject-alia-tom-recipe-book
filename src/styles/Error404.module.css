@@ -1,0 +1,47 @@
+.page404 {
+    padding: 40px 0;
+    background: #fff;
+    font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+    margin: 11rem 27rem 6rem 2rem;
+    font-weight: bold;
+
+}
+
+.fourZeroFourImage {
+    width: 400px;
+    height: auto;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    width: 200px;
+}
+
+
+.primaryBtn {
+    background-color: #2a2e45;
+    color: #fff;
+}
+
+.primaryBtn:hover {
+    color: #fff;
+}
+
+.secondaryBtn {
+    color: #2a2e45;
+    background-color: #fff;
+    border: solid 1px #2a2e45;
+}
+
+.secondaryBtn:hover {
+    color: #2a2e45;
+}

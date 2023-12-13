@@ -1,0 +1,9 @@
+.aboutCtn {
+    margin: 11rem 27rem 6rem 2rem;
+    text-align: center;
+}
+
+.aboutCtn h4 {
+    font-size: 2em;
+    margin: 1em 0;
+}
