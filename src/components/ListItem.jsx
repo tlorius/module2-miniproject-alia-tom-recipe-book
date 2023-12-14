@@ -26,7 +26,7 @@ const ListItem = ({ currentRecipe, deleteRecipeHandler }) => {
       <div className={classes.deleteBtnContainer}>
         <i
           onClick={() => deleteRecipeHandler(currentRecipe.id)}
-          className={`glyphicon glyphicon-remove ${classes.deleteIcon}`}
+          className={`bi bi-x ${classes.deleteIcon}`}
         ></i>
       </div>
     </div>
