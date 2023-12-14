@@ -1,9 +1,24 @@
 .aboutCtn {
     margin: 11rem 27rem 6rem 2rem;
     text-align: center;
+    color: #333;
 }
 
-.aboutCtn h4 {
-    font-size: 2em;
-    margin: 1em 0;
+p {
+    line-height: 1.6;
+    color: #666;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.listItem {
+    margin-bottom: 10px;
+}
+
+.link {
+    color: #007bff;
+    text-decoration: none;
 }
