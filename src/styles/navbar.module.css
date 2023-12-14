@@ -8,34 +8,34 @@
   text-align: center;
   height: 10rem;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  gap: 2rem;
+
   z-index: 100;
 }
 
-.gitHubImg {
-  height: 1.6rem;
+.cntLink {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
 }
 
 .navbarImage {
   height: 7rem;
 }
 
-.containerLinks {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-.containerLinks:hover,
-.containerLinks:focus {
-  color: white;
-  text-decoration: none;
-}
-
-.navbar h1 {
+.h1text {
   font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
   font-size: 4rem;
+  color: white;
+  text-decoration: none;
+}
+
+.h1text:hover,
+.h1text:focus,
+.navbar Link:hover,
+.navbar Link:focus {
+  color: white;
+  text-decoration: none;
 }

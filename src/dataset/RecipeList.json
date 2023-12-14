@@ -14,8 +14,8 @@
     "nutrionalInformation": {
       "calories": 400,
       "fat": 100,
-      "salt": 1,
-      "sugar": 10
+      "carbs": 10,
+      "protein": 10
     },
     "calories": 400,
     "image": "https://i.imgur.com/eTmWoAN.png",

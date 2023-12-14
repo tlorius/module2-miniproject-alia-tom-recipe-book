@@ -1,3 +1,58 @@
 .mainContainer {
   margin: 11rem 27rem 6rem 2rem;
+  text-align: center;
+}
+
+.recipeImg {
+  max-width: 100%;
+  height: auto;
+  max-height: 20vh;
+  border-radius: 10px;
+}
+
+.centerList {
+  text-align: left;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.nutritionalInformation,
+.mainInformation {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+}
+
+.nutritionalInformation p {
+  text-align: left;
+  margin: 1px 0;
+  font-size: 1.1rem;
+}
+
+.backBtn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.cntCooking,
+.cntInformation {
+  display: flex;
+  justify-content: space-evenly;
+}
+.title {
+  margin: 2rem 0;
+  font-size: 5rem;
 }
