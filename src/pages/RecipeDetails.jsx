@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import classes from "../styles/RecipeDetails.module.css";
+import { v4 } from "uuid";
 
 const RecipeDetails = ({ recipeList }) => {
   let { recipeid } = useParams();
@@ -18,11 +19,33 @@ const RecipeDetails = ({ recipeList }) => {
       <p>Description: {currentRecipeDetails.description}</p>
       <p>Duration: {currentRecipeDetails.duration}</p>
       <p>Servings: {currentRecipeDetails.servings}</p>
-      <p>Ingredients: {currentRecipeDetails.ingredients[0].ingredient}</p>
-
-      {/* need to loop thru steps to cook to create UL with li elements
-      same with the nutritional data 
-      <p>{currentRecipeDetails.stepsToCook}</p>*/}
+      <div>
+        <h4>Ingredients:</h4>
+        <ul>
+          {currentRecipeDetails.ingredients.map((currentIngredient) => (
+            <li key={v4()}>
+              {currentIngredient.amount} {currentIngredient.unit}{" "}
+              {currentIngredient.ingredient}
+            </li>
+          ))}
+        </ul>
+      </div>
+      {/* should probably create its own component from the steps to cook*/}
+      <div>
+        <h4>Steps to Cook:</h4>
+        <ol>
+          {currentRecipeDetails.stepsToCook.map((currentStep) => (
+            <li key={v4()}>{currentStep}</li>
+          ))}
+        </ol>
+      </div>
+      <div>
+        <h4>Nutritional Information:</h4>
+        <p>Calories: {currentRecipeDetails.nutrionalInformation.calories}</p>
+        <p>Fat: {currentRecipeDetails.nutrionalInformation.fat}</p>
+        <p>Carbs: {currentRecipeDetails.nutrionalInformation.carbs}</p>
+        <p>Protein: {currentRecipeDetails.nutrionalInformation.protein}</p>
+      </div>
     </div>
   );
 };
