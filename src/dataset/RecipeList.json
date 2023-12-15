@@ -21,8 +21,16 @@
     "image": "https://i.imgur.com/eTmWoAN.png",
     "servings": 1,
     "ingredients": [
-      { "ingredient": "Sauce", "amount": 100, "unit": "ml" },
-      { "ingredient": "Cheese", "amount": 50, "unit": "grams" }
+      {
+        "ingredient": "Sauce",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "ingredient": "Cheese",
+        "amount": 50,
+        "unit": "grams"
+      }
     ]
   },
   {

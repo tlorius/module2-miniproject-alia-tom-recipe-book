@@ -1,11 +1,11 @@
 form {
-    margin: 11rem 27rem 6rem 2rem;
+    flex: 1;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    max-width: 600px;
+
     /* margin: 1.5rem auto; */
     padding: 1.5rem;
     border: 1px solid #ccc;

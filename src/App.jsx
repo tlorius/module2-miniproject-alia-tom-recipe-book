@@ -1,4 +1,4 @@
-import "./App.css";
+import classes from "../src/App.module.css";
 import { v4 } from "uuid";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -38,26 +38,30 @@ function App() {
   return (
     <div>
       <Navbar />
+      <div className={classes.appContainer}>
+        <div className={classes.routesContainer}>
 
-      <Sidebar />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <Homepage
-              deleteRecipeHandler={deleteRecipeHandler}
-              recipeList={recipeList}
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Homepage
+                  deleteRecipeHandler={deleteRecipeHandler}
+                  recipeList={recipeList}
+                />
+              }
             />
-          }
-        />
-        <Route
-          path="/recipe/:recipename/:recipeid"
-          element={<RecipeDetails recipeList={recipeList} />}
-        />
-        <Route path="/createrecipe" element={<CreateRecipeForm handleSubmit={handleSubmit} />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<Error404 />} />
-      </Routes>
+            <Route
+              path="/recipe/:recipename/:recipeid"
+              element={<RecipeDetails recipeList={recipeList} />}
+            />
+            <Route path="/createrecipe" element={<CreateRecipeForm handleSubmit={handleSubmit} />} />
+            <Route path="/about" element={<About />} />
+            <Route path="*" element={<Error404 />} />
+          </Routes>
+        </div>
+        <Sidebar />
+      </div>
       <Footer />
     </div>
   );

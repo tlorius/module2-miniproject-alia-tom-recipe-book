@@ -13,7 +13,7 @@ const Navbar = () => {
           src={recipeBookLogo}
           alt="Recipe Book Logo"
         />
-        <h1 className={classes.h1text}>Recipe Book</h1>
+        <h1 className={classes.h1text}>Delicious Hack</h1>
       </Link>
     </nav>
   );
