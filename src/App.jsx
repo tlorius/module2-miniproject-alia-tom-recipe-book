@@ -8,7 +8,7 @@ import About from "./pages/About";
 import Error404 from "./pages/Error404";
 import RecipeDetails from "./pages/RecipeDetails";
 import CreateRecipeForm from "./pages/CreateRecipeForm";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import recipeListData from "./dataset/RecipeList.json";
 import { useState } from "react";
 
@@ -21,7 +21,9 @@ function App() {
     );
   };
 
-  const handleSubmit = (newRecipe, event) => {
+  let navigate = useNavigate();
+
+  const handleSubmit = (newRecipe, event, isCreateForm) => {
     event.preventDefault();
     let stepsArray = [];
     let ingredientsArray = [];
@@ -35,26 +37,39 @@ function App() {
         .split("\n")
         .filter((line) => line.trim() !== "");
     }
-
-    setRecipeList((prevRecipes) => {
-      return [
-        ...prevRecipes,
-        {
-          id: v4(),
-          name: newRecipe.name,
-          image: newRecipe.image,
-          duration: newRecipe.duration,
-          description: newRecipe.description,
-          servings: newRecipe.servings,
-          calories: newRecipe.calories,
-          fat: newRecipe.fat,
-          carbs: newRecipe.carbs,
-          protein: newRecipe.protein,
-          stepsToCook: stepsArray,
-          ingredients: ingredientsArray,
-        },
-      ];
-    });
+    if (isCreateForm) {
+      setRecipeList((prevRecipes) => {
+        return [
+          ...prevRecipes,
+          {
+            id: v4(),
+            name: newRecipe.name,
+            image: newRecipe.image,
+            duration: newRecipe.duration,
+            description: newRecipe.description,
+            servings: newRecipe.servings,
+            calories: newRecipe.calories,
+            fat: newRecipe.fat,
+            carbs: newRecipe.carbs,
+            protein: newRecipe.protein,
+            stepsToCook: stepsArray,
+            ingredients: ingredientsArray,
+          },
+        ];
+      });
+    } else {
+      newRecipe = {
+        ...newRecipe,
+        stepsToCook: stepsArray,
+        ingredients: ingredientsArray,
+      };
+      setRecipeList(
+        recipeList.map((recipe) =>
+          recipe.id === newRecipe.id ? newRecipe : recipe
+        )
+      );
+    }
+    navigate(`/`);
   };
   return (
     <div>

@@ -5,36 +5,44 @@ import { useParams, useNavigate } from "react-router-dom";
 
 const CreateRecipeForm = ({ handleSubmit, recipeList }) => {
   let { recipeid } = useParams();
+  let isCreateForm = !recipeid;
 
   let navigate = useNavigate();
 
-  let emptyRecipe;
   //check if we received a recipeid in the url -> if we didn't set empty recipe as placeholder, otherwise use current recipe
   //as placeholders
-  if (!recipeid) {
-    emptyRecipe = {
-      name: "",
-      duration: "",
-      description: "",
-      stepsToCook: [],
-      calories: 0,
-      fat: 0,
-      carbs: 0,
-      protein: 0,
-      image: "",
-      servings: 1,
-      ingredients: [],
-    };
-  } else {
-    emptyRecipe = recipeList.find((recipe) => recipe.id === recipeid);
-    emptyRecipe = {
-      ...emptyRecipe,
-      stepsToCook: emptyRecipe.stepsToCook.join("\n"),
-      ingredients: emptyRecipe.ingredients.join("\n"),
-    };
-  }
+  const initializeRecipeForm = () => {
+    if (isCreateForm) {
+      return {
+        name: "",
+        duration: "",
+        description: "",
+        stepsToCook: [],
+        calories: 0,
+        fat: 0,
+        carbs: 0,
+        protein: 0,
+        image: "",
+        servings: 1,
+        ingredients: [],
+      };
+    } else {
+      const updatingRecipe = recipeList.find(
+        (recipe) => recipe.id === recipeid
+      );
+      return {
+        ...updatingRecipe,
+        stepsToCook: Array.isArray(updatingRecipe.stepsToCook)
+          ? updatingRecipe.stepsToCook.join("\n")
+          : updatingRecipe.stepsToCook,
+        ingredients: Array.isArray(updatingRecipe.ingredients)
+          ? updatingRecipe.ingredients.join("\n")
+          : updatingRecipe.ingredients,
+      };
+    }
+  };
 
-  const [newRecipe, setNewRecipe] = useState(emptyRecipe);
+  const [newRecipe, setNewRecipe] = useState(initializeRecipeForm());
 
   const handleChange = (event) => {
     const currentName = event.target.name;
@@ -49,10 +57,10 @@ const CreateRecipeForm = ({ handleSubmit, recipeList }) => {
   return (
     <form
       onSubmit={(event) => {
-        handleSubmit(newRecipe, event);
+        handleSubmit(newRecipe, event, isCreateForm);
       }}
     >
-      {!recipeid ? (
+      {isCreateForm ? (
         <span>Add Your Recipe</span>
       ) : (
         <span>Update Your Recipe</span>
@@ -177,7 +185,7 @@ const CreateRecipeForm = ({ handleSubmit, recipeList }) => {
           </label>
         </div>
 
-        {!recipeid ? (
+        {isCreateForm ? (
           <button type="submit">Add Recipe</button>
         ) : (
           <div>
