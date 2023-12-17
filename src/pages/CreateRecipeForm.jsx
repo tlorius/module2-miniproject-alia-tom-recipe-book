@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import classes from "../styles/CreateRecipeForm.module.css";
 import { useParams, useNavigate } from "react-router-dom";
 
@@ -10,7 +10,8 @@ const CreateRecipeForm = ({ handleSubmit, recipeList }) => {
 
   //check if we received a recipeid in the url -> if we didn't set empty recipe as placeholder, otherwise use current recipe
   //as placeholders
-  const initializeRecipeForm = () => {
+  //useCallback prevents the function from being recreated each re-render but only if recipeid or recipelist change
+  const initializeRecipeForm = useCallback(() => {
     if (isCreateForm) {
       return {
         name: "",
@@ -39,7 +40,7 @@ const CreateRecipeForm = ({ handleSubmit, recipeList }) => {
           : updatingRecipe.ingredients,
       };
     }
-  };
+  }, [recipeid, recipeList]);
 
   const [newRecipe, setNewRecipe] = useState(initializeRecipeForm());
 
@@ -52,6 +53,12 @@ const CreateRecipeForm = ({ handleSubmit, recipeList }) => {
     }
     setNewRecipe({ ...newRecipe, [currentName]: currentValue });
   };
+  //re-rendering the page in-case the recipeID changes
+  //this covers an edge case, where the user navigates to create a new recipe
+  //while already editing an existing recipe
+  useEffect(() => {
+    setNewRecipe(initializeRecipeForm());
+  }, [recipeid, initializeRecipeForm]);
 
   return (
     <form
