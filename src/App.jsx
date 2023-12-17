@@ -23,6 +23,19 @@ function App() {
 
   let navigate = useNavigate();
 
+  const handleFavToggle = (currentId) => {
+    /*sth like this but the newrecipe:recipe will need to be modifications of the object holding the isFavorite*/
+    setRecipeList(
+      recipeList.map((recipe) =>
+        recipe.id === currentId
+          ? { ...recipe, isFavorite: !recipe.isFavorite }
+          : recipe
+      )
+    );
+
+    console.log("Toggling ID: ", currentId, " as favorite");
+  };
+
   const handleSubmit = (newRecipe, event, isCreateForm) => {
     event.preventDefault();
     let stepsArray = [];
@@ -54,6 +67,7 @@ function App() {
             protein: newRecipe.protein,
             stepsToCook: stepsArray,
             ingredients: ingredientsArray,
+            isFavorite: false,
           },
         ];
       });
@@ -97,7 +111,12 @@ function App() {
         />
         <Route
           path="/recipe/:recipename/:recipeid"
-          element={<RecipeDetails recipeList={recipeList} />}
+          element={
+            <RecipeDetails
+              recipeList={recipeList}
+              handleFavToggle={handleFavToggle}
+            />
+          }
         />
         <Route
           path="/createrecipe"

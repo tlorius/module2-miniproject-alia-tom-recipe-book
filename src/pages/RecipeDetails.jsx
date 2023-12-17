@@ -1,8 +1,9 @@
 import { Link, useParams } from "react-router-dom";
 import classes from "../styles/RecipeDetails.module.css";
 import { v4 } from "uuid";
+import FavoriteButton from "../components/FavoriteButton";
 
-const RecipeDetails = ({ recipeList }) => {
+const RecipeDetails = ({ recipeList, handleFavToggle }) => {
   let { recipeid } = useParams();
   const currentRecipeDetails = recipeList.find(
     (recipe) => recipe.id === recipeid
@@ -15,6 +16,15 @@ const RecipeDetails = ({ recipeList }) => {
         alt={`${currentRecipeDetails.name}`}
       />
       <h1 className={classes.title}>{currentRecipeDetails.name}</h1>
+
+      <div>
+        <p>Favorite: {currentRecipeDetails.isFavorite ? "Yes" : "No"}</p>
+        <FavoriteButton
+          handleFavToggle={handleFavToggle}
+          favRecipeId={currentRecipeDetails.id}
+        />
+      </div>
+
       <div className={classes.cntInformation}>
         <div className={classes.mainInformation}>
           <p>Description: {currentRecipeDetails.description}</p>

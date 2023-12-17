@@ -8,8 +8,8 @@ const ListItem = ({ currentRecipe, deleteRecipeHandler }) => {
         <div className={classes.imageContainer}>
           <img src={currentRecipe.image} alt="" />
         </div>
-        {currentRecipe.calories >= 300 && (
-          <div className={classes.highCalories}>High in Calories</div>
+        {currentRecipe.isFavorite && (
+          <div className={classes.favoriteRecipe}>Favorite Recipe</div>
         )}
         <div className={classes.textContainer}>
           <h3 className={classes.recipeHeader}>{currentRecipe.name}</h3>
