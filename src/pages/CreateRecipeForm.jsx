@@ -1,52 +1,194 @@
-import { useState } from "react";
-import classes from "../styles/CreateRecipeForm.module.css"
+import { useEffect, useState } from "react";
+import classes from "../styles/CreateRecipeForm.module.css";
+import { v4 } from "uuid";
+import { useParams, useNavigate } from "react-router-dom";
 
-const CreateRecipeForm = ({ handleSubmit }) => {
-  const [newRecipe, setNewRecipe] = useState({
-    name: '', duration: '', description: '', stepsToCook: [],
-    nutrionalInformation: {
-      "calories": 0,
-      "fat": 0,
-      "carbs": 0,
-      "protein": 0
-    }, image: '', servings: 1, ingredients: []
-  })
+const CreateRecipeForm = ({ handleSubmit, recipeList }) => {
+  let { recipeid } = useParams();
+
+  let navigate = useNavigate();
+
+  let emptyRecipe;
+  //check if we received a recipeid in the url -> if we didn't set empty recipe as placeholder, otherwise use current recipe
+  //as placeholders
+  if (!recipeid) {
+    emptyRecipe = {
+      name: "",
+      duration: "",
+      description: "",
+      stepsToCook: [],
+      calories: 0,
+      fat: 0,
+      carbs: 0,
+      protein: 0,
+      image: "",
+      servings: 1,
+      ingredients: [],
+    };
+  } else {
+    emptyRecipe = recipeList.find((recipe) => recipe.id === recipeid);
+    emptyRecipe = {
+      ...emptyRecipe,
+      stepsToCook: emptyRecipe.stepsToCook.join("\n"),
+      ingredients: emptyRecipe.ingredients.join("\n"),
+    };
+  }
+
+  const [newRecipe, setNewRecipe] = useState(emptyRecipe);
+
+  const handleChange = (event) => {
+    const currentName = event.target.name;
+    let currentValue = event.target.value;
+
+    if (event.target.type === "number") {
+      currentValue = parseInt(currentValue);
+    }
+    setNewRecipe({ ...newRecipe, [currentName]: currentValue });
+  };
 
   return (
-    < form onSubmit={() => { handleSubmit(newRecipe) }} >
-      <span>Add Your Recipe</span>
+    <form
+      onSubmit={(event) => {
+        handleSubmit(newRecipe, event);
+      }}
+    >
+      {!recipeid ? (
+        <span>Add Your Recipe</span>
+      ) : (
+        <span>Update Your Recipe</span>
+      )}
       <div className={classes.formContainer}>
         <label>
           Name
-          <input name="name" type="text" placeholder="name" value={newRecipe.name} onChange={(event) => setNewRecipe({ ...newRecipe, name: event.target.value })} />
+          <input
+            required
+            name="name"
+            type="text"
+            placeholder="name"
+            value={newRecipe.name}
+            onChange={handleChange}
+          />
         </label>
 
         <label>
           Image
-          <input name="image" type="url" placeholder="image" value={newRecipe.image} onChange={(event) => setNewRecipe({ ...newRecipe, image: event.target.value })} />
+          <input
+            name="image"
+            type="url"
+            placeholder="image"
+            value={newRecipe.image}
+            onChange={handleChange}
+          />
         </label>
 
         <label>
           Duration
-          <input name="duration" type="number" value={newRecipe.duration} onChange={(event) => setNewRecipe({ ...newRecipe, duration: event.target.value })} />
+          <input
+            name="duration"
+            type="string"
+            value={newRecipe.duration}
+            onChange={handleChange}
+          />
         </label>
 
         <label>
           Description
-          <input name="description" type="text" value={newRecipe.description} onChange={(event) => setNewRecipe({ ...newRecipe, description: event.target.value })} />
+          <input
+            name="description"
+            type="text"
+            value={newRecipe.description}
+            onChange={handleChange}
+          />
         </label>
 
         <label>
           Servings
-          <input name="servings" type="number" value={newRecipe.servings} onChange={(event) => setNewRecipe({ ...newRecipe, servings: event.target.value })} />
+          <input
+            name="servings"
+            type="number"
+            value={newRecipe.servings}
+            onChange={handleChange}
+          />
         </label>
 
-        <button type="submit">Add Recipe</button>
+        <label>
+          Ingredients
+          <textarea
+            name="ingredients"
+            type="text"
+            placeholder="Enter each ingredient with the required amount on a new line."
+            cols="50"
+            rows="10"
+            onChange={handleChange}
+            value={newRecipe.ingredients}
+          ></textarea>
+        </label>
 
+        <label>
+          Steps to Cook
+          <textarea
+            name="stepsToCook"
+            type="text"
+            placeholder="Enter each step on a new line. Numeration will be added after submitting."
+            cols="50"
+            rows="10"
+            onChange={handleChange}
+            value={newRecipe.stepsToCook}
+          ></textarea>
+        </label>
+
+        <div>
+          <p>Nutritional Information</p>
+          <label>
+            Calories
+            <input
+              name="calories"
+              type="number"
+              value={newRecipe.calories}
+              onChange={handleChange}
+            />
+          </label>
+          <label>
+            Fat
+            <input
+              name="fat"
+              type="number"
+              value={newRecipe.fat}
+              onChange={handleChange}
+            />
+          </label>
+          <label>
+            Carbs
+            <input
+              name="carbs"
+              type="number"
+              value={newRecipe.carbs}
+              onChange={handleChange}
+            />
+          </label>
+          <label>
+            Protein
+            <input
+              name="protein"
+              type="number"
+              value={newRecipe.protein}
+              onChange={handleChange}
+            />
+          </label>
+        </div>
+
+        {!recipeid ? (
+          <button type="submit">Add Recipe</button>
+        ) : (
+          <div>
+            <button type="submit">Update Recipe</button>
+            <button type="button" onClick={() => navigate(-1)}>
+              Cancel
+            </button>
+          </div>
+        )}
       </div>
-
-    </form >
-
+    </form>
   );
 };
 

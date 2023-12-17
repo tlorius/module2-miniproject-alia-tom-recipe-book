@@ -11,19 +11,13 @@
       "Add Cheese",
       "Bake"
     ],
-    "nutrionalInformation": {
-      "calories": 400,
-      "fat": 100,
-      "carbs": 10,
-      "protein": 10
-    },
     "calories": 400,
+    "fat": 100,
+    "carbs": 10,
+    "protein": 10,
     "image": "https://i.imgur.com/eTmWoAN.png",
     "servings": 1,
-    "ingredients": [
-      { "ingredient": "Sauce", "amount": 100, "unit": "ml" },
-      { "ingredient": "Cheese", "amount": 50, "unit": "grams" }
-    ]
+    "ingredients": ["100ml Sauce", "50g Cheese"]
   },
   {
     "id": "37e0b31d-63f4-4d42-9f4b-e9a0fc464d60",

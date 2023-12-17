@@ -21,20 +21,41 @@ function App() {
     );
   };
 
-  const handleSubmit = (newRecipe) => {
+  const handleSubmit = (newRecipe, event) => {
     event.preventDefault();
-    setRecipeList(prevRecipes => {
+    let stepsArray = [];
+    let ingredientsArray = [];
+    if (typeof newRecipe.stepsToCook === "string") {
+      stepsArray = newRecipe.stepsToCook
+        .split("\n")
+        .filter((line) => line.trim() !== "");
+    }
+    if (typeof newRecipe.ingredients === "string") {
+      ingredientsArray = newRecipe.ingredients
+        .split("\n")
+        .filter((line) => line.trim() !== "");
+    }
+
+    setRecipeList((prevRecipes) => {
       return [
         ...prevRecipes,
         {
           id: v4(),
           name: newRecipe.name,
           image: newRecipe.image,
-        }
-      ]
-
-    })
-  }
+          duration: newRecipe.duration,
+          description: newRecipe.description,
+          servings: newRecipe.servings,
+          calories: newRecipe.calories,
+          fat: newRecipe.fat,
+          carbs: newRecipe.carbs,
+          protein: newRecipe.protein,
+          stepsToCook: stepsArray,
+          ingredients: ingredientsArray,
+        },
+      ];
+    });
+  };
   return (
     <div>
       <Navbar />
@@ -51,10 +72,22 @@ function App() {
           }
         />
         <Route
+          path="/:recipename/:recipeid/update"
+          element={
+            <CreateRecipeForm
+              recipeList={recipeList}
+              handleSubmit={handleSubmit}
+            />
+          }
+        />
+        <Route
           path="/recipe/:recipename/:recipeid"
           element={<RecipeDetails recipeList={recipeList} />}
         />
-        <Route path="/createrecipe" element={<CreateRecipeForm handleSubmit={handleSubmit} />} />
+        <Route
+          path="/createrecipe"
+          element={<CreateRecipeForm handleSubmit={handleSubmit} />}
+        />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
