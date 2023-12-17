@@ -24,7 +24,6 @@ function App() {
   let navigate = useNavigate();
 
   const handleFavToggle = (currentId) => {
-    /*sth like this but the newrecipe:recipe will need to be modifications of the object holding the isFavorite*/
     setRecipeList(
       recipeList.map((recipe) =>
         recipe.id === currentId
@@ -32,8 +31,6 @@ function App() {
           : recipe
       )
     );
-
-    console.log("Toggling ID: ", currentId, " as favorite");
   };
 
   const handleSubmit = (newRecipe, event, isCreateForm) => {
