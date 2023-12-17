@@ -225,5 +225,30 @@
     "image": "https://natashaskitchen.com/wp-content/uploads/2019/01/Caesar-Salad-Recipe-3.jpg",
     "servings": 2,
     "ingredients": ["1 headRomaine lettuce", "50g Croutons"]
+  },
+  {
+    "id": "6e0b70b0-30ee-43dd-b82f-f1d4960995d9",
+    "name": "Ratatouille",
+    "duration": "1 hour",
+    "description": "A traditional French Proven\u00e7al stewed vegetable dish, originating in Nice.",
+    "stepsToCook": [
+      "Chop vegetables",
+      "Sauté onions and garlic",
+      "Add eggplant and peppers",
+      "Add zucchini and tomatoes",
+      "Simmer and season"
+    ],
+    "calories": 150,
+    "fat": 10,
+    "carbs": 20,
+    "protein": 4,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAwQIjYcl4eeOBafIpjmHUqC1aWSD7rcwVLg&usqp=CAU",
+    "servings": 4,
+    "ingredients": [
+      "1 whole Eggplant",
+      "2 whole Zucchini",
+      "1 whole rat",
+      "2 whole Bell peppers"
+    ]
   }
 ]
