@@ -1,4 +1,12 @@
 .sidebarContainer {
+<<<<<<< HEAD
+=======
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100vh;
+>>>>>>> feature/createRecipe
   background-color: white;
   padding-top: 120px;
   width: 250px;

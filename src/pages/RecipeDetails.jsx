@@ -1,10 +1,10 @@
 import { Link, useParams } from "react-router-dom";
 import classes from "../styles/RecipeDetails.module.css";
 import { v4 } from "uuid";
+import FavoriteButton from "../components/FavoriteButton";
 
-const RecipeDetails = ({ recipeList }) => {
+const RecipeDetails = ({ recipeList, handleFavToggle }) => {
   let { recipeid } = useParams();
-  console.log(recipeid);
   const currentRecipeDetails = recipeList.find(
     (recipe) => recipe.id === recipeid
   );
@@ -16,6 +16,15 @@ const RecipeDetails = ({ recipeList }) => {
         alt={`${currentRecipeDetails.name}`}
       />
       <h1 className={classes.title}>{currentRecipeDetails.name}</h1>
+
+      <div>
+        <p>Favorite: {currentRecipeDetails.isFavorite ? "Yes" : "No"}</p>
+        <FavoriteButton
+          handleFavToggle={handleFavToggle}
+          favRecipeId={currentRecipeDetails.id}
+        />
+      </div>
+
       <div className={classes.cntInformation}>
         <div className={classes.mainInformation}>
           <p>Description: {currentRecipeDetails.description}</p>
@@ -24,10 +33,10 @@ const RecipeDetails = ({ recipeList }) => {
         </div>
         <div className={classes.nutritionalInformation}>
           <h4>Nutritional Information</h4>
-          <p>Calories: {currentRecipeDetails.nutrionalInformation.calories}</p>
-          <p>Fat: {currentRecipeDetails.nutrionalInformation.fat} g</p>
-          <p>Carbs: {currentRecipeDetails.nutrionalInformation.carbs} g</p>
-          <p>Protein: {currentRecipeDetails.nutrionalInformation.protein} g</p>
+          <p>Calories: {currentRecipeDetails.calories}</p>
+          <p>Fat: {currentRecipeDetails.fat} g</p>
+          <p>Carbs: {currentRecipeDetails.carbs} g</p>
+          <p>Protein: {currentRecipeDetails.protein} g</p>
         </div>
       </div>
 
@@ -36,10 +45,7 @@ const RecipeDetails = ({ recipeList }) => {
           <h4>Ingredients:</h4>
           <ul className={classes.centerList}>
             {currentRecipeDetails.ingredients.map((currentIngredient) => (
-              <li key={v4()}>
-                {currentIngredient.amount} {currentIngredient.unit}{" "}
-                {currentIngredient.ingredient}
-              </li>
+              <li key={v4()}>{currentIngredient}</li>
             ))}
           </ul>
         </div>
@@ -53,11 +59,17 @@ const RecipeDetails = ({ recipeList }) => {
         </div>
       </div>
 
-      {/* should probably create its own component from the steps to cook*/}
-
       <Link to="/">
         <button className={classes.backBtn} type="button">
           BACK
+        </button>
+      </Link>
+
+      <Link
+        to={`/${currentRecipeDetails.name}/${currentRecipeDetails.id}/update`}
+      >
+        <button className={classes.backBtn} type="button">
+          Update Recipe
         </button>
       </Link>
     </div>

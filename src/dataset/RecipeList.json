@@ -9,140 +9,258 @@
       "Add Sauce",
       "Add Toppings",
       "Add Cheese",
-      "Bake"
+      "Add Pineapple",
+      "Start a civil war",
+      "Bake",
+      "Enjoy"
     ],
-    "nutrionalInformation": {
-      "calories": 400,
-      "fat": 100,
-      "carbs": 10,
-      "protein": 10
-    },
     "calories": 400,
+    "fat": 100,
+    "carbs": 10,
+    "protein": 10,
     "image": "https://i.imgur.com/eTmWoAN.png",
     "servings": 1,
-    "ingredients": [
-      {
-        "ingredient": "Sauce",
-        "amount": 100,
-        "unit": "ml"
-      },
-      {
-        "ingredient": "Cheese",
-        "amount": 50,
-        "unit": "grams"
-      }
-    ]
+    "ingredients": ["1 Pizza"],
+    "isFavorite": false
   },
   {
     "id": "37e0b31d-63f4-4d42-9f4b-e9a0fc464d60",
-    "name": "Salad",
-    "calories": 150,
-    "image": "https://i.imgur.com/DupGBz5.jpg",
-    "servings": 1
+    "name": "Vegetable Lasagna",
+    "duration": "1 hour 30 minutes",
+    "description": "A classic Italian dish with layers of pasta, rich tomato sauce, and a variety of vegetables.",
+    "stepsToCook": [
+      "Prepare lasagna noodles",
+      "Cook vegetables",
+      "Layer noodles, vegetables, and cheese",
+      "Bake",
+      "Rest before serving"
+    ],
+    "calories": 450,
+    "fat": 18,
+    "carbs": 55,
+    "protein": 22,
+    "image": "https://i.imgur.com/eTiq7yO.jpg",
+    "servings": 4,
+    "ingredients": [
+      "200g Lasagna noodles",
+      "300g Mixed vegetables",
+      "100g Cheese"
+    ],
+    "isFavorite": false
   },
   {
     "id": "b5eb5b5f-41b8-4f1f-8844-7a1a56a17df7",
-    "name": "Sweet Potato",
-    "calories": 120,
-    "image": "https://i.imgur.com/hGraGyR.jpg",
-    "servings": 1
+    "name": "Chicken Tikka Masala",
+    "duration": "1 hour",
+    "description": "A popular Indian curry with marinated grilled chicken in a spiced tomato sauce.",
+    "stepsToCook": [
+      "Marinate chicken",
+      "Grill chicken",
+      "Prepare sauce",
+      "Combine chicken and sauce",
+      "Simmer"
+    ],
+    "calories": 380,
+    "fat": 20,
+    "carbs": 20,
+    "protein": 30,
+    "image": "https://i.pinimg.com/originals/0a/1d/75/0a1d7504a40722499438321059e551ce.jpg",
+    "servings": 3,
+    "ingredients": ["300g Chicken breast", "150ml Tomato sauce"],
+    "isFavorite": false
   },
   {
     "id": "6c0f6f33-8c50-403d-9d1c-6ac9d8b77f29",
-    "name": "Gnocchi",
-    "calories": 500,
-    "image": "https://i.imgur.com/93ekwW0.jpg",
-    "servings": 1
+    "name": "Miso Soup",
+    "duration": "20 minutes",
+    "description": "A traditional Japanese soup with miso paste, tofu, and seaweed.",
+    "stepsToCook": [
+      "Boil water",
+      "Dissolve miso paste",
+      "Add tofu and seaweed",
+      "Simmer",
+      "Serve"
+    ],
+    "calories": 80,
+    "fat": 2,
+    "carbs": 8,
+    "protein": 6,
+    "image": "https://www.gimmesomeoven.com/wp-content/uploads/2016/01/Miso-Soup-Recipe-9.jpg",
+    "servings": 2,
+    "ingredients": ["40g Miso paste", "50g Tofu"],
+    "isFavorite": false
   },
   {
     "id": "f4b4d2bc-ff12-4f3f-b3b3-19d2f1682401",
-    "name": "Pot Roast",
-    "calories": 350,
-    "image": "https://i.imgur.com/WCzJDWz.jpg",
-    "servings": 1
+    "name": "Beef Stroganoff",
+    "duration": "45 minutes",
+    "description": "A Russian dish of sautéed beef in a creamy mushroom sauce.",
+    "stepsToCook": [
+      "Cook beef",
+      "Saute mushrooms and onions",
+      "Add sauce and beef",
+      "Simmer",
+      "Serve with pasta"
+    ],
+    "calories": 500,
+    "fat": 25,
+    "carbs": 40,
+    "protein": 30,
+    "image": "https://messinthekitchen.com/wp-content/uploads/2021/04/beef-stroganoff-feature.jpg",
+    "servings": 4,
+    "ingredients": ["300g Beef", "100g Mushrooms"],
+    "isFavorite": false
   },
   {
-    "id": "bf89c1db-5c5b-4262-9d1e-8a68f88c61d5",
-    "name": "Lasagna",
-    "calories": 750,
-    "image": "https://i.imgur.com/ClxOafl.jpg",
-    "servings": 1
+    "id": "2de2b172-8d07-40d6-9f1b-010bc5840b50",
+    "name": "Quinoa Salad",
+    "duration": "30 minutes",
+    "description": "A light and healthy salad with quinoa, vegetables, and a lemon vinaigrette.",
+    "stepsToCook": [
+      "Cook quinoa",
+      "Chop vegetables",
+      "Mix quinoa and vegetables",
+      "Add dressing",
+      "Chill and serve"
+    ],
+
+    "calories": 220,
+    "fat": 7,
+    "carbs": 30,
+    "protein": 8,
+    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2020/08/quinoa-salad.jpg",
+    "servings": 2,
+    "ingredients": ["100g Quinoa", "100g Mixed vegetables"],
+    "isFavorite": false
   },
   {
-    "id": "bca9beec-43d3-48b1-9b57-793a8a8c3520",
-    "name": "Hamburger",
-    "calories": 400,
-    "image": "https://i.imgur.com/LoG39wK.jpg",
-    "servings": 1
-  },
-  {
-    "id": "b777a69a-7f1c-41e8-8a4c-1d0e9e4cace8",
+    "id": "39e6f711-a69d-4921-abc8-568bf79d6e46",
     "name": "Pad Thai",
-    "calories": 475,
-    "image": "https://i.imgur.com/5ktcSzF.jpg",
-    "servings": 1
+    "duration": "30 minutes",
+    "description": "A classic Thai stir-fried noodle dish with shrimp, tofu, peanuts, and bean sprouts.",
+    "stepsToCook": [
+      "Soak noodles",
+      "Cook shrimp and tofu",
+      "Stir-fry with sauce",
+      "Add noodles",
+      "Garnish with peanuts and lime"
+    ],
+    "calories": 450,
+    "fat": 15,
+    "carbs": 60,
+    "protein": 20,
+    "image": "https://www.recipetineats.com/wp-content/uploads/2020/01/Chicken-Pad-Thai_9-SQ.jpg",
+    "servings": 3,
+    "ingredients": ["200g Rice noodles", "100g Shrimp"],
+    "isFavorite": false
   },
   {
-    "id": "d087343e-9a92-48c7-8b27-43e37491b6f5",
-    "name": "Almonds",
-    "calories": 75,
-    "image": "https://i.imgur.com/JRp4Ksx.jpg",
-    "servings": 1
+    "id": "5ff3361d-f5a5-473b-8a68-159e43f0ce2d",
+    "name": "Lentil Soup",
+    "duration": "1 hour",
+    "description": "A nourishing soup with lentils, carrots, and aromatic spices.",
+    "stepsToCook": [
+      "Cook lentils",
+      "Saute vegetables and spices",
+      "Add lentils and broth",
+      "Simmer",
+      "Serve with bread"
+    ],
+    "calories": 250,
+    "fat": 5,
+    "carbs": 40,
+    "protein": 15,
+    "image": "https://www.allrecipes.com/thmb/UeFtapHyGFBo4Lx-72GxgjrOGnk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/13978-lentil-soup-DDMFS-4x3-edfa47fc6b234e6b8add24d44c036d43.jpg",
+    "servings": 4,
+    "ingredients": ["200g Lentils", "2 whole Carrots"],
+    "isFavorite": false
   },
   {
-    "id": "e1f87a2e-60b3-4a3f-bb48-20a396a9a94f",
-    "name": "Sarma",
-    "calories": 200,
-    "image": "https://i.imgur.com/yOlf4Fj.jpg",
-    "servings": 1
+    "id": "61bfcb00-db74-4aee-a393-7676cfd1d1e8",
+    "name": "Egg Fried Rice",
+    "duration": "20 minutes",
+    "description": "A simple and quick fried rice dish with eggs, peas, and carrots. Uncle Roger approves.",
+    "stepsToCook": [
+      "Cook rice",
+      "Scramble eggs",
+      "Fry rice with vegetables and eggs",
+      "Season",
+      "Serve hot"
+    ],
+    "calories": 350,
+    "fat": 10,
+    "carbs": 55,
+    "protein": 12,
+    "image": "https://www.seriouseats.com/thmb/BJjCEDw9OZe95hpZxmNcD3rJnHo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20230529-SEA-EggFriedRice-AmandaSuarez-hero-c8d95fbf69314b318bc279159f582882.jpg",
+    "servings": 2,
+    "ingredients": ["150g Rice", "2 whole Eggs"],
+    "isFavorite": false
   },
   {
-    "id": "0ce7e4d4-1c8a-4e9f-98df-1ecb1e7b8a0b",
-    "name": "Bacon",
-    "calories": 175,
-    "image": "https://i.imgur.com/7GlqDsG.jpg",
-    "servings": 1
+    "id": "3a47d1df-8aa2-4629-8880-e3ee51d57907",
+    "name": "Chocolate Mousse",
+    "duration": "2 hours",
+    "description": "A rich and creamy chocolate mousse with a smooth texture.",
+    "stepsToCook": [
+      "Melt chocolate",
+      "Whip cream",
+      "Fold chocolate into cream",
+      "Chill",
+      "Serve garnished with berries"
+    ],
+    "calories": 300,
+    "fat": 20,
+    "carbs": 25,
+    "protein": 4,
+    "image": "https://jackienewgent.com/wp-content/uploads/2014/06/Dark-Chocolate-Covered-Strawberry-Mousse-Pudding-1024x758.jpg",
+    "servings": 4,
+    "ingredients": ["100g Dark chocolate", "200ml Heavy cream"],
+    "isFavorite": false
   },
   {
-    "id": "bbfd30fd-cd75-4e3b-8fc8-3d3fd62a3c39",
-    "name": "Hot Dog",
-    "calories": 275,
-    "image": "https://i.imgur.com/QqVHdRu.jpg",
-    "servings": 1
+    "id": "ece7b009-b7e2-4f08-bdeb-6facd146ead9",
+    "name": "Caesar Salad",
+    "duration": "15 minutes",
+    "description": "A classic salad with romaine lettuce, croutons, and Caesar dressing.",
+    "stepsToCook": [
+      "Chop lettuce",
+      "Prepare dressing",
+      "Toss lettuce with dressing and croutons",
+      "Serve with Parmesan cheese"
+    ],
+    "calories": 180,
+    "fat": 12,
+    "carbs": 10,
+    "protein": 7,
+    "image": "https://natashaskitchen.com/wp-content/uploads/2019/01/Caesar-Salad-Recipe-3.jpg",
+    "servings": 2,
+    "ingredients": ["1 headRomaine lettuce", "50g Croutons"],
+    "isFavorite": false
   },
   {
-    "id": "1c6d5b5f-4e72-4136-8c6c-9cf3e3d16a65",
-    "name": "Chocolate Cake",
-    "calories": 490,
-    "image": "https://i.imgur.com/yrgzA9x.jpg",
-    "servings": 1
-  },
-  {
-    "id": "07d9616d-7a63-457c-b8a7-58f6a70a67e3",
-    "name": "Wheat Bread",
-    "calories": 175,
-    "image": "https://i.imgur.com/TsWzMfM.jpg",
-    "servings": 1
-  },
-  {
-    "id": "d7a8f0c1-0a34-4e3b-a2d3-3c3e3f11eb19",
-    "name": "Orange",
-    "calories": 85,
-    "image": "https://i.imgur.com/abKGOcv.jpg",
-    "servings": 1
-  },
-  {
-    "id": "a8d111c4-50ef-4c61-8b16-17e84a86b2f4",
-    "name": "Banana",
-    "calories": 175,
-    "image": "https://i.imgur.com/BMdJhu5.jpg",
-    "servings": 1
-  },
-  {
-    "id": "62d8a0bc-1b77-4389-9e7b-2e00cace6a2e",
-    "name": "Yogurt",
-    "calories": 125,
-    "image": "https://i.imgur.com/URhdrAm.png",
-    "servings": 1
+    "id": "6e0b70b0-30ee-43dd-b82f-f1d4960995d9",
+    "name": "Ratatouille",
+    "duration": "1 hour",
+    "description": "A traditional French Proven\u00e7al stewed vegetable dish, originating in Nice.",
+    "stepsToCook": [
+      "Chop vegetables",
+      "Sauté onions and garlic",
+      "Add eggplant and peppers",
+      "Add zucchini and tomatoes",
+      "Simmer and season"
+    ],
+    "calories": 150,
+    "fat": 10,
+    "carbs": 20,
+    "protein": 4,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAwQIjYcl4eeOBafIpjmHUqC1aWSD7rcwVLg&usqp=CAU",
+    "servings": 4,
+    "ingredients": [
+      "1 whole Eggplant",
+      "2 whole Zucchini",
+      "1 whole rat",
+      "2 whole Bell peppers"
+    ],
+    "isFavorite": false
   }
 ]
