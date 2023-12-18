@@ -87,43 +87,44 @@ function App() {
       <Navbar />
       <div className={classes.appContainer}>
         <div className={classes.routesContainer}>
-
-      <Sidebar />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <Homepage
-              deleteRecipeHandler={deleteRecipeHandler}
-              recipeList={recipeList}
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Homepage
+                  deleteRecipeHandler={deleteRecipeHandler}
+                  recipeList={recipeList}
+                />
+              }
             />
-          }
-        />
-        <Route
-          path="/:recipename/:recipeid/update"
-          element={
-            <CreateRecipeForm
-              recipeList={recipeList}
-              handleSubmit={handleSubmit}
+            <Route
+              path="/:recipename/:recipeid/update"
+              element={
+                <CreateRecipeForm
+                  recipeList={recipeList}
+                  handleSubmit={handleSubmit}
+                />
+              }
             />
-          }
-        />
-        <Route
-          path="/recipe/:recipename/:recipeid"
-          element={
-            <RecipeDetails
-              recipeList={recipeList}
-              handleFavToggle={handleFavToggle}
+            <Route
+              path="/recipe/:recipename/:recipeid"
+              element={
+                <RecipeDetails
+                  recipeList={recipeList}
+                  handleFavToggle={handleFavToggle}
+                />
+              }
             />
-          }
-        />
-        <Route
-          path="/createrecipe"
-          element={<CreateRecipeForm handleSubmit={handleSubmit} />}
-        />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<Error404 />} />
-      </Routes>
+            <Route
+              path="/createrecipe"
+              element={<CreateRecipeForm handleSubmit={handleSubmit} />}
+            />
+            <Route path="/about" element={<About />} />
+            <Route path="*" element={<Error404 />} />
+          </Routes>
+        </div>
+        <Sidebar />
+      </div>
       <Footer />
     </div>
   );
