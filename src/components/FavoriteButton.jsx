@@ -1,7 +1,13 @@
+import classes from "../styles/FavoriteButton.module.css";
+
 const FavoriteButton = ({ handleFavToggle, favRecipeId }) => {
   return (
     <>
-      <button onClick={() => handleFavToggle(favRecipeId)} type="button">
+      <button
+        className={classes.favBtn}
+        onClick={() => handleFavToggle(favRecipeId)}
+        type="button"
+      >
         Toggle Favorite
       </button>
     </>
