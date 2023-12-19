@@ -56,12 +56,18 @@
 }
 
 .buttonsCtn button {
-  margin: 0 10px;
+  margin: 10px 10px;
+}
+
+.buttonsCtn {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .textArea {
   margin-top: 0.5rem;
   border-radius: 5px;
+  width: 20vw;
 }
 
 .textAreaCtn {
@@ -71,4 +77,25 @@
 
 .textAreaCtn label {
   margin-bottom: 10rem;
+}
+
+@media (max-width: 1250px) {
+  .inputContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttonsCtn {
+    margin-bottom: 20vh;
+    margin-top: 5px;
+  }
+
+  .formHeader {
+    text-align: left;
+  }
+
+  .formCtn {
+    height: 180vh;
+    margin-bottom: 5vh;
+  }
 }
