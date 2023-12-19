@@ -20,7 +20,9 @@
     "protein": 10,
     "image": "https://i.imgur.com/eTmWoAN.png",
     "servings": 1,
-    "ingredients": ["1 Pizza"],
+    "ingredients": [
+      "1 Pizza"
+    ],
     "isFavorite": false
   },
   {
@@ -66,7 +68,10 @@
     "protein": 30,
     "image": "https://i.pinimg.com/originals/0a/1d/75/0a1d7504a40722499438321059e551ce.jpg",
     "servings": 3,
-    "ingredients": ["300g Chicken breast", "150ml Tomato sauce"],
+    "ingredients": [
+      "300g Chicken breast",
+      "150ml Tomato sauce"
+    ],
     "isFavorite": false
   },
   {
@@ -87,7 +92,10 @@
     "protein": 6,
     "image": "https://www.gimmesomeoven.com/wp-content/uploads/2016/01/Miso-Soup-Recipe-9.jpg",
     "servings": 2,
-    "ingredients": ["40g Miso paste", "50g Tofu"],
+    "ingredients": [
+      "40g Miso paste",
+      "50g Tofu"
+    ],
     "isFavorite": false
   },
   {
@@ -108,7 +116,10 @@
     "protein": 30,
     "image": "https://messinthekitchen.com/wp-content/uploads/2021/04/beef-stroganoff-feature.jpg",
     "servings": 4,
-    "ingredients": ["300g Beef", "100g Mushrooms"],
+    "ingredients": [
+      "300g Beef",
+      "100g Mushrooms"
+    ],
     "isFavorite": false
   },
   {
@@ -123,14 +134,16 @@
       "Add dressing",
       "Chill and serve"
     ],
-
     "calories": 220,
     "fat": 7,
     "carbs": 30,
     "protein": 8,
     "image": "https://cdn.loveandlemons.com/wp-content/uploads/2020/08/quinoa-salad.jpg",
     "servings": 2,
-    "ingredients": ["100g Quinoa", "100g Mixed vegetables"],
+    "ingredients": [
+      "100g Quinoa",
+      "100g Mixed vegetables"
+    ],
     "isFavorite": false
   },
   {
@@ -151,7 +164,10 @@
     "protein": 20,
     "image": "https://www.recipetineats.com/wp-content/uploads/2020/01/Chicken-Pad-Thai_9-SQ.jpg",
     "servings": 3,
-    "ingredients": ["200g Rice noodles", "100g Shrimp"],
+    "ingredients": [
+      "200g Rice noodles",
+      "100g Shrimp"
+    ],
     "isFavorite": false
   },
   {
@@ -172,7 +188,10 @@
     "protein": 15,
     "image": "https://www.allrecipes.com/thmb/UeFtapHyGFBo4Lx-72GxgjrOGnk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/13978-lentil-soup-DDMFS-4x3-edfa47fc6b234e6b8add24d44c036d43.jpg",
     "servings": 4,
-    "ingredients": ["200g Lentils", "2 whole Carrots"],
+    "ingredients": [
+      "200g Lentils",
+      "2 whole Carrots"
+    ],
     "isFavorite": false
   },
   {
@@ -193,7 +212,10 @@
     "protein": 12,
     "image": "https://www.seriouseats.com/thmb/BJjCEDw9OZe95hpZxmNcD3rJnHo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20230529-SEA-EggFriedRice-AmandaSuarez-hero-c8d95fbf69314b318bc279159f582882.jpg",
     "servings": 2,
-    "ingredients": ["150g Rice", "2 whole Eggs"],
+    "ingredients": [
+      "150g Rice",
+      "2 whole Eggs"
+    ],
     "isFavorite": false
   },
   {
@@ -214,7 +236,10 @@
     "protein": 4,
     "image": "https://jackienewgent.com/wp-content/uploads/2014/06/Dark-Chocolate-Covered-Strawberry-Mousse-Pudding-1024x758.jpg",
     "servings": 4,
-    "ingredients": ["100g Dark chocolate", "200ml Heavy cream"],
+    "ingredients": [
+      "100g Dark chocolate",
+      "200ml Heavy cream"
+    ],
     "isFavorite": false
   },
   {
@@ -234,7 +259,10 @@
     "protein": 7,
     "image": "https://natashaskitchen.com/wp-content/uploads/2019/01/Caesar-Salad-Recipe-3.jpg",
     "servings": 2,
-    "ingredients": ["1 headRomaine lettuce", "50g Croutons"],
+    "ingredients": [
+      "1 headRomaine lettuce",
+      "50g Croutons"
+    ],
     "isFavorite": false
   },
   {
@@ -260,6 +288,63 @@
       "2 whole Zucchini",
       "1 whole rat",
       "2 whole Bell peppers"
+    ],
+    "isFavorite": false
+  },
+  {
+    "id": "bae89fb5-8d26-41f4-a762-00c12253c1cf",
+    "name": "Aaron's Beans",
+    "duration": "2 hours",
+    "description": "This recipe is incredibly simple to make, and it's fat-free",
+    "stepsToCook": [
+      "Soak the kidney beans in water for 8 hours",
+      "Combine beans, 1 quart water, preserved lemon, sugar, black pepper, red chile pepper, bay leaf, garlic powder, and anise seed in a stockpot; bring to a boil.Reduce heat to low, cover stockpot, and simmer for 1 hour.",
+      "Remove lemon, bay leaf, and red chile pepper from bean mixture. Mash about 10% of the beans against the sides of the stockpot using the back of a spoon. Cover stockpot and simmer for 45 minutes more.",
+      "Remove cover from stockpot and simmer beans until beans are thickened and water is evaporated, about 15 minutes more."
+    ],
+    "calories": 278,
+    "fat": 1,
+    "carbs": 53,
+    "protein": 17,
+    "image": "https://www.allrecipes.com/thmb/7Yg6L1XxrfXSsZ9XO91ZvgRkaIA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/3118625-2bbadf4e65044eaa86db344299466e8e.jpg",
+    "servings": 6,
+    "ingredients": [
+      "1 pound dried red kidney beans, rinsed",
+      "2 quarts water",
+      "1 Moroccan-style preserved lemon, or to taste",
+      "1 tablespoon white sugar",
+      "1 tablespoon freshly ground black pepper",
+      "1 small red chile pepper, halved lengthwise",
+      "1 bay leaf",
+      "1 teaspoon garlic powder",
+      "1 teaspoon anise seed"
+    ],
+    "isFavorite": false
+  },
+  {
+    "id": "d756baf5-b3c5-4b4c-9d3f-116d1858c6a3",
+    "name": "Pizza Salad",
+    "duration": "15 minutes",
+    "description": "This innovative dish takes the essence of a traditional pizza and transforms it into a light, refreshing salad that's perfect for any occasion.",
+    "stepsToCook": [
+      "Combine lettuce, salami, mozzarella cheese, Cheddar cheese, tomato, olives, and chives in a large bowl. Mix well to combine.",
+      "Make dressing: Whisk together tomato sauce, oil, vinegar, sugar, oregano, salt, garlic powder, and pepper in a medium bowl.",
+      "Pour enough dressing over lettuce mixture to coat; toss and serve."
+    ],
+    "calories": 475,
+    "fat": 41,
+    "carbs": 9,
+    "protein": 20,
+    "image": "https://www.allrecipes.com/thmb/R9PzQO3tvdz7APPbN1BEv74oC88=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/694594-681774411cba41c69a7202499d0791a4.jpg",
+    "servings": 6,
+    "ingredients": [
+      "1 head iceberg lettuce, torn into bite-sized pieces",
+      "½ pound salami, cut into strips",
+      "1 cup shredded mozzarella cheese",
+      "1 cup shredded Cheddar cheese",
+      "1 tomato, chopped",
+      "½ cup pitted black olives, halved",
+      "1 tablespoon chopped fresh chives"
     ],
     "isFavorite": false
   }
