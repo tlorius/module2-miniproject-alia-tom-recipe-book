@@ -11,14 +11,7 @@ const RecipeDetails = ({ recipeList, handleFavToggle }) => {
   return (
     <div className={classes.mainContainer}>
       <div className={classes.titleCtn}>
-        <h1 className={classes.title}>
-          <FavoriteButton
-            handleFavToggle={handleFavToggle}
-            favRecipeId={currentRecipeDetails.id}
-            isFavorite={currentRecipeDetails.isFavorite}
-          />
-          {currentRecipeDetails.name}
-        </h1>
+        <h1 className={classes.title}>{currentRecipeDetails.name}</h1>
         <div className={classes.imgCtn}>
           <img
             className={classes.recipeImg}
@@ -71,19 +64,26 @@ const RecipeDetails = ({ recipeList, handleFavToggle }) => {
         </div>
       </div>
 
-      <Link to="/">
-        <button className={classes.backBtn} type="button">
-          BACK
-        </button>
-      </Link>
-
-      <Link
-        to={`/${currentRecipeDetails.name}/${currentRecipeDetails.id}/update`}
-      >
-        <button className={classes.backBtn} type="button">
-          Update Recipe
-        </button>
-      </Link>
+      <div className={classes.btnCtn}>
+        <Link to="/">
+          <button className={classes.backBtn} type="button">
+            Back
+          </button>
+        </Link>
+        <FavoriteButton
+          className={classes.favBtn}
+          handleFavToggle={handleFavToggle}
+          favRecipeId={currentRecipeDetails.id}
+          isFavorite={currentRecipeDetails.isFavorite}
+        />
+        <Link
+          to={`/${currentRecipeDetails.name}/${currentRecipeDetails.id}/update`}
+        >
+          <button className={classes.backBtn} type="button">
+            Update Recipe
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };
