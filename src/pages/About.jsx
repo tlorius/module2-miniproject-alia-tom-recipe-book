@@ -11,7 +11,7 @@ const teamMembers = [{
   name: "Tom Lorius",
   githubProfile: "https://github.com/tlorius/",
   linkedInProfile: "https://www.linkedin.com/in/tom-lorius-7a7557203/",
-  image: "https://i.imgur.com/eTmWoAN.png"
+  image: "https://i.ibb.co/RpQrckz/IMG-1816.jpg"
 }];
 
 const About = () => {

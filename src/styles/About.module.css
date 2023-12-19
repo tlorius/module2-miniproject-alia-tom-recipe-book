@@ -3,6 +3,12 @@
     color: #333;
 }
 
+.aboutCtn h2 {
+    font-weight: bold;
+    padding-bottom: 20px;
+    /* padding-top: 5px; */
+}
+
 .contentCtn {
     display: flex;
     align-items: center;
@@ -26,7 +32,12 @@
     flex: 1.5;
 }
 
-p {
+.aboutUsContentCtn h1 {
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.aboutUsContentCtn p {
     line-height: 1.6;
     color: #666;
 }

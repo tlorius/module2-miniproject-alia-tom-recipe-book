@@ -4,7 +4,7 @@ import classes from "../styles/ListItem.module.css";
 const ListItem = ({ currentRecipe, deleteRecipeHandler }) => {
   return (
     <div className={classes.container}>
-      <Link to={`/recipe/${currentRecipe.name}/${currentRecipe.id}`}>
+      <Link to={`/recipe/${currentRecipe.name}/${currentRecipe.id}`} className={classes.link}>
         <div className={classes.imageContainer}>
           <img src={currentRecipe.image} alt="" />
         </div>
