@@ -11,7 +11,24 @@ const RecipeDetails = ({ recipeList, handleFavToggle }) => {
   return (
     <div className={classes.mainContainer}>
       <div className={classes.titleCtn}>
-        <h1 className={classes.title}>{currentRecipeDetails.name}</h1>
+        <div>
+          <h1 className={classes.title}>{currentRecipeDetails.name}</h1>
+          <div className={classes.mainInformation}>
+            <p>
+              <span className={classes.boldTxt}>Description:</span>{" "}
+              {currentRecipeDetails.description}
+            </p>
+            <p>
+              <span className={classes.boldTxt}>Duration:</span>{" "}
+              {currentRecipeDetails.duration}
+            </p>
+            <p>
+              <span className={classes.boldTxt}>Servings:</span>{" "}
+              {currentRecipeDetails.servings}
+            </p>
+          </div>
+        </div>
+
         <div className={classes.imgCtn}>
           <img
             className={classes.recipeImg}
@@ -22,30 +39,6 @@ const RecipeDetails = ({ recipeList, handleFavToggle }) => {
       </div>
 
       <div className={classes.cntInformation}>
-        <div className={classes.mainInformation}>
-          <p>
-            <span className={classes.boldTxt}>Description:</span>{" "}
-            {currentRecipeDetails.description}
-          </p>
-          <p>
-            <span className={classes.boldTxt}>Duration:</span>{" "}
-            {currentRecipeDetails.duration}
-          </p>
-          <p>
-            <span className={classes.boldTxt}>Servings:</span>{" "}
-            {currentRecipeDetails.servings}
-          </p>
-        </div>
-        <div className={classes.nutritionalInformation}>
-          <h4>Nutritional Information</h4>
-          <p>Calories: {currentRecipeDetails.calories}</p>
-          <p>Fat: {currentRecipeDetails.fat} g</p>
-          <p>Carbs: {currentRecipeDetails.carbs} g</p>
-          <p>Protein: {currentRecipeDetails.protein} g</p>
-        </div>
-      </div>
-
-      <div className={classes.cntCooking}>
         <div className={classes.ctnIngredients}>
           <h4>Ingredients:</h4>
           <ul className={classes.ulList}>
@@ -61,6 +54,13 @@ const RecipeDetails = ({ recipeList, handleFavToggle }) => {
               <li key={v4()}>{currentStep}</li>
             ))}
           </ol>
+        </div>
+        <div className={classes.nutritionalInformation}>
+          <h4>Nutritional Information:</h4>
+          <p>Calories: {currentRecipeDetails.calories}</p>
+          <p>Fat: {currentRecipeDetails.fat} g</p>
+          <p>Carbs: {currentRecipeDetails.carbs} g</p>
+          <p>Protein: {currentRecipeDetails.protein} g</p>
         </div>
       </div>
 
