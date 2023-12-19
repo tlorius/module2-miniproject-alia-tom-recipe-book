@@ -58,9 +58,9 @@ const RecipeDetails = ({ recipeList, handleFavToggle }) => {
         <div className={classes.nutritionalInformation}>
           <h4>Nutritional Information:</h4>
           <p>Calories: {currentRecipeDetails.calories}</p>
-          <p>Fat: {currentRecipeDetails.fat} g</p>
-          <p>Carbs: {currentRecipeDetails.carbs} g</p>
-          <p>Protein: {currentRecipeDetails.protein} g</p>
+          <p>Fat: {currentRecipeDetails.fat}g</p>
+          <p>Carbs: {currentRecipeDetails.carbs}g</p>
+          <p>Protein: {currentRecipeDetails.protein}g</p>
         </div>
       </div>
 

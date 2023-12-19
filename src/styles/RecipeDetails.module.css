@@ -3,6 +3,7 @@
   margin-bottom: 10vh;
   font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
   color: black;
+  font-size: 0.8rem;
 }
 
 .titleCtn {
@@ -49,7 +50,7 @@
 .nutritionalInformation p {
   text-align: left;
   margin: 1px 0;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .backBtn {
@@ -98,6 +99,7 @@
 
 .ctnSteps {
   margin-right: -9rem;
+  /* max-width: 25rem; */
 }
 
 .btnCtn {

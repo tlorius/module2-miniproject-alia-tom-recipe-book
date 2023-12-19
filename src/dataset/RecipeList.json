@@ -20,9 +20,7 @@
     "protein": 10,
     "image": "https://i.imgur.com/eTmWoAN.png",
     "servings": 1,
-    "ingredients": [
-      "1 Pizza"
-    ],
+    "ingredients": ["1 Pizza"],
     "isFavorite": false
   },
   {
@@ -68,10 +66,7 @@
     "protein": 30,
     "image": "https://i.pinimg.com/originals/0a/1d/75/0a1d7504a40722499438321059e551ce.jpg",
     "servings": 3,
-    "ingredients": [
-      "300g Chicken breast",
-      "150ml Tomato sauce"
-    ],
+    "ingredients": ["300g Chicken breast", "150ml Tomato sauce"],
     "isFavorite": false
   },
   {
@@ -92,10 +87,7 @@
     "protein": 6,
     "image": "https://www.gimmesomeoven.com/wp-content/uploads/2016/01/Miso-Soup-Recipe-9.jpg",
     "servings": 2,
-    "ingredients": [
-      "40g Miso paste",
-      "50g Tofu"
-    ],
+    "ingredients": ["40g Miso paste", "50g Tofu"],
     "isFavorite": false
   },
   {
@@ -116,10 +108,7 @@
     "protein": 30,
     "image": "https://messinthekitchen.com/wp-content/uploads/2021/04/beef-stroganoff-feature.jpg",
     "servings": 4,
-    "ingredients": [
-      "300g Beef",
-      "100g Mushrooms"
-    ],
+    "ingredients": ["300g Beef", "100g Mushrooms"],
     "isFavorite": false
   },
   {
@@ -140,10 +129,7 @@
     "protein": 8,
     "image": "https://cdn.loveandlemons.com/wp-content/uploads/2020/08/quinoa-salad.jpg",
     "servings": 2,
-    "ingredients": [
-      "100g Quinoa",
-      "100g Mixed vegetables"
-    ],
+    "ingredients": ["100g Quinoa", "100g Mixed vegetables"],
     "isFavorite": false
   },
   {
@@ -164,10 +150,7 @@
     "protein": 20,
     "image": "https://www.recipetineats.com/wp-content/uploads/2020/01/Chicken-Pad-Thai_9-SQ.jpg",
     "servings": 3,
-    "ingredients": [
-      "200g Rice noodles",
-      "100g Shrimp"
-    ],
+    "ingredients": ["200g Rice noodles", "100g Shrimp"],
     "isFavorite": false
   },
   {
@@ -188,10 +171,7 @@
     "protein": 15,
     "image": "https://www.allrecipes.com/thmb/UeFtapHyGFBo4Lx-72GxgjrOGnk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/13978-lentil-soup-DDMFS-4x3-edfa47fc6b234e6b8add24d44c036d43.jpg",
     "servings": 4,
-    "ingredients": [
-      "200g Lentils",
-      "2 whole Carrots"
-    ],
+    "ingredients": ["200g Lentils", "2 whole Carrots"],
     "isFavorite": false
   },
   {
@@ -212,10 +192,7 @@
     "protein": 12,
     "image": "https://www.seriouseats.com/thmb/BJjCEDw9OZe95hpZxmNcD3rJnHo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20230529-SEA-EggFriedRice-AmandaSuarez-hero-c8d95fbf69314b318bc279159f582882.jpg",
     "servings": 2,
-    "ingredients": [
-      "150g Rice",
-      "2 whole Eggs"
-    ],
+    "ingredients": ["150g Rice", "2 whole Eggs"],
     "isFavorite": false
   },
   {
@@ -236,10 +213,7 @@
     "protein": 4,
     "image": "https://jackienewgent.com/wp-content/uploads/2014/06/Dark-Chocolate-Covered-Strawberry-Mousse-Pudding-1024x758.jpg",
     "servings": 4,
-    "ingredients": [
-      "100g Dark chocolate",
-      "200ml Heavy cream"
-    ],
+    "ingredients": ["100g Dark chocolate", "200ml Heavy cream"],
     "isFavorite": false
   },
   {
@@ -259,10 +233,7 @@
     "protein": 7,
     "image": "https://natashaskitchen.com/wp-content/uploads/2019/01/Caesar-Salad-Recipe-3.jpg",
     "servings": 2,
-    "ingredients": [
-      "1 headRomaine lettuce",
-      "50g Croutons"
-    ],
+    "ingredients": ["1 head Romaine lettuce", "50g Croutons"],
     "isFavorite": false
   },
   {
