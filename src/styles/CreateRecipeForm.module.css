@@ -3,13 +3,13 @@
   padding: 1.5rem;
   height: 33rem;
   font-size: 0.8rem;
+  margin-top: -2rem;
 }
 
 .formHeader {
   text-align: center;
   font-weight: 600;
   font-size: 1.8rem;
-  margin-bottom: 3rem;
 }
 
 .label {
