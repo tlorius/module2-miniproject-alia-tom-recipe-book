@@ -217,7 +217,7 @@ const CreateRecipeForm = ({ handleSubmit, recipeList }) => {
             type="button"
             onClick={() => navigate("/")}
           >
-            Cancel{" "}
+            Cancel
           </button>
         </div>
       ) : (
@@ -228,7 +228,7 @@ const CreateRecipeForm = ({ handleSubmit, recipeList }) => {
           <button
             className={classes.buttonForm}
             type="button"
-            onClick={() => navigate(-1)}
+            onClick={() => navigate("/")}
           >
             Cancel
           </button>
