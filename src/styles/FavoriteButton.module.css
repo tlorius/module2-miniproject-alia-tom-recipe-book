@@ -1,0 +1,13 @@
+.favBtn {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 1rem;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.favBtnImg {
+  height: 60px;
+}

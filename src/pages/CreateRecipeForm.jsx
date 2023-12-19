@@ -62,127 +62,111 @@ const CreateRecipeForm = ({ handleSubmit, recipeList }) => {
 
   return (
     <form
+      className={classes.formCtn}
       onSubmit={(event) => {
         handleSubmit(newRecipe, event, isCreateForm);
       }}
     >
       {isCreateForm ? (
-        <span>Add Your Recipe</span>
+        <h2 className={classes.formHeader}>Add Your Recipe</h2>
       ) : (
-        <span>Update Your Recipe</span>
+        <h2 className={classes.formHeader}>
+          Update Your {newRecipe.name} Recipe
+        </h2>
       )}
-      <div className={classes.formContainer}>
-        <label>
-          Name
-          <input
-            required
-            name="name"
-            type="text"
-            placeholder="name"
-            value={newRecipe.name}
-            onChange={handleChange}
-          />
-        </label>
-
-        <label>
-          Image
-          <input
-            name="image"
-            type="url"
-            placeholder="image"
-            value={newRecipe.image}
-            onChange={handleChange}
-          />
-        </label>
-
-        <label>
-          Duration
-          <input
-            name="duration"
-            type="string"
-            value={newRecipe.duration}
-            onChange={handleChange}
-          />
-        </label>
-
-        <label>
-          Description
-          <input
-            name="description"
-            type="text"
-            value={newRecipe.description}
-            onChange={handleChange}
-          />
-        </label>
-
-        <label>
-          Servings
-          <input
-            name="servings"
-            type="number"
-            value={newRecipe.servings}
-            onChange={handleChange}
-          />
-        </label>
-
-        <label>
-          Ingredients
-          <textarea
-            name="ingredients"
-            type="text"
-            placeholder="Enter each ingredient with the required amount on a new line."
-            cols="50"
-            rows="10"
-            onChange={handleChange}
-            value={newRecipe.ingredients}
-          ></textarea>
-        </label>
-
-        <label>
-          Steps to Cook
-          <textarea
-            name="stepsToCook"
-            type="text"
-            placeholder="Enter each step on a new line. Numeration will be added after submitting."
-            cols="50"
-            rows="10"
-            onChange={handleChange}
-            value={newRecipe.stepsToCook}
-          ></textarea>
-        </label>
-
-        <div>
-          <p>Nutritional Information</p>
-          <label>
+      <div className={classes.inputContainer}>
+        <div className={classes.leftCtn}>
+          <label className={classes.label}>
+            Name
+            <input
+              className={classes.input}
+              required
+              name="name"
+              type="text"
+              placeholder="Enter name here"
+              value={newRecipe.name}
+              onChange={handleChange}
+            />
+          </label>
+          <label className={classes.label}>
+            Description
+            <input
+              className={classes.input}
+              name="description"
+              type="text"
+              placeholder="Enter description here"
+              value={newRecipe.description}
+              onChange={handleChange}
+            />
+          </label>
+          <label className={classes.label}>
+            Duration
+            <input
+              className={classes.input}
+              name="duration"
+              type="string"
+              placeholder="1 hour"
+              value={newRecipe.duration}
+              onChange={handleChange}
+            />
+          </label>
+          <label className={classes.label}>
+            Servings
+            <input
+              className={classes.input}
+              name="servings"
+              type="number"
+              value={newRecipe.servings}
+              onChange={handleChange}
+            />
+          </label>
+          <label className={classes.label}>
+            Image
+            <input
+              className={classes.input}
+              name="image"
+              type="url"
+              placeholder="Enter image url here"
+              value={newRecipe.image}
+              onChange={handleChange}
+            />
+          </label>
+        </div>
+        <div className={classes.centerCtn}>
+          <label className={classes.label}>
             Calories
             <input
+              className={classes.input}
               name="calories"
               type="number"
               value={newRecipe.calories}
               onChange={handleChange}
             />
           </label>
-          <label>
-            Fat
+          <label className={classes.label}>
+            Fat in grams
             <input
+              className={classes.input}
               name="fat"
               type="number"
               value={newRecipe.fat}
               onChange={handleChange}
             />
           </label>
-          <label>
-            Carbs
+          <label className={classes.label}>
+            Carbs in grams
             <input
+              className={classes.input}
               name="carbs"
               type="number"
               value={newRecipe.carbs}
               onChange={handleChange}
             />
           </label>
-          <label>
-            Protein
+          <label className={classes.label}>
+            Protein in grams
             <input
+              className={classes.input}
               name="protein"
               type="number"
               value={newRecipe.protein}
@@ -190,18 +174,66 @@ const CreateRecipeForm = ({ handleSubmit, recipeList }) => {
             />
           </label>
         </div>
-
-        {isCreateForm ? (
-          <button type="submit">Add Recipe</button>
-        ) : (
-          <div>
-            <button type="submit">Update Recipe</button>
-            <button type="button" onClick={() => navigate(-1)}>
-              Cancel
-            </button>
+        <div className={classes.rightCtn}>
+          <div className={classes.textAreaCtn}>
+            <label className={classes.label}>
+              Ingredients
+              <textarea
+                className={classes.textArea}
+                name="ingredients"
+                type="text"
+                placeholder="Enter each ingredient with the required amount on a new line."
+                cols="50"
+                rows="10"
+                onChange={handleChange}
+                value={newRecipe.ingredients}
+              ></textarea>
+            </label>
           </div>
-        )}
+          <div className={classes.textAreaCtn}>
+            <label className={classes.label}>
+              Steps to Cook
+              <textarea
+                className={classes.textArea}
+                name="stepsToCook"
+                type="text"
+                placeholder="Enter each step on a new line. Numeration will be added after submitting."
+                cols="50"
+                rows="10"
+                onChange={handleChange}
+                value={newRecipe.stepsToCook}
+              ></textarea>
+            </label>
+          </div>
+        </div>
       </div>
+      {isCreateForm ? (
+        <div className={classes.buttonsCtn}>
+          <button className={classes.buttonForm} type="submit">
+            Add Recipe
+          </button>
+          <button
+            className={classes.buttonForm}
+            type="button"
+            onClick={() => navigate("/")}
+          >
+            Cancel{" "}
+          </button>
+        </div>
+      ) : (
+        <div className={classes.buttonsCtn}>
+          <button className={classes.buttonForm} type="submit">
+            Update Recipe
+          </button>
+          <button
+            className={classes.buttonForm}
+            type="button"
+            onClick={() => navigate(-1)}
+          >
+            Cancel
+          </button>
+        </div>
+      )}
     </form>
   );
 };

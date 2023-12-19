@@ -10,26 +10,31 @@ const RecipeDetails = ({ recipeList, handleFavToggle }) => {
   );
   return (
     <div className={classes.mainContainer}>
-      <img
-        className={classes.recipeImg}
-        src={currentRecipeDetails.image}
-        alt={`${currentRecipeDetails.name}`}
-      />
-      <h1 className={classes.title}>{currentRecipeDetails.name}</h1>
-
-      <div>
-        <p>Favorite: {currentRecipeDetails.isFavorite ? "Yes" : "No"}</p>
-        <FavoriteButton
-          handleFavToggle={handleFavToggle}
-          favRecipeId={currentRecipeDetails.id}
-        />
+      <div className={classes.titleCtn}>
+        <h1 className={classes.title}>{currentRecipeDetails.name}</h1>
+        <div className={classes.imgCtn}>
+          <img
+            className={classes.recipeImg}
+            src={currentRecipeDetails.image}
+            alt={`${currentRecipeDetails.name}`}
+          />
+        </div>
       </div>
 
       <div className={classes.cntInformation}>
         <div className={classes.mainInformation}>
-          <p>Description: {currentRecipeDetails.description}</p>
-          <p>Duration: {currentRecipeDetails.duration}</p>
-          <p>Servings: {currentRecipeDetails.servings}</p>
+          <p>
+            <span className={classes.boldTxt}>Description:</span>{" "}
+            {currentRecipeDetails.description}
+          </p>
+          <p>
+            <span className={classes.boldTxt}>Duration:</span>{" "}
+            {currentRecipeDetails.duration}
+          </p>
+          <p>
+            <span className={classes.boldTxt}>Servings:</span>{" "}
+            {currentRecipeDetails.servings}
+          </p>
         </div>
         <div className={classes.nutritionalInformation}>
           <h4>Nutritional Information</h4>
@@ -41,17 +46,17 @@ const RecipeDetails = ({ recipeList, handleFavToggle }) => {
       </div>
 
       <div className={classes.cntCooking}>
-        <div>
+        <div className={classes.ctnIngredients}>
           <h4>Ingredients:</h4>
-          <ul className={classes.centerList}>
+          <ul className={classes.ulList}>
             {currentRecipeDetails.ingredients.map((currentIngredient) => (
               <li key={v4()}>{currentIngredient}</li>
             ))}
           </ul>
         </div>
-        <div>
+        <div className={classes.ctnSteps}>
           <h4>Steps to Cook:</h4>
-          <ol className={classes.centerList}>
+          <ol className={classes.olList}>
             {currentRecipeDetails.stepsToCook.map((currentStep) => (
               <li key={v4()}>{currentStep}</li>
             ))}
@@ -59,19 +64,26 @@ const RecipeDetails = ({ recipeList, handleFavToggle }) => {
         </div>
       </div>
 
-      <Link to="/">
-        <button className={classes.backBtn} type="button">
-          BACK
-        </button>
-      </Link>
-
-      <Link
-        to={`/${currentRecipeDetails.name}/${currentRecipeDetails.id}/update`}
-      >
-        <button className={classes.backBtn} type="button">
-          Update Recipe
-        </button>
-      </Link>
+      <div className={classes.btnCtn}>
+        <Link to="/">
+          <button className={classes.backBtn} type="button">
+            Back
+          </button>
+        </Link>
+        <FavoriteButton
+          className={classes.favBtn}
+          handleFavToggle={handleFavToggle}
+          favRecipeId={currentRecipeDetails.id}
+          isFavorite={currentRecipeDetails.isFavorite}
+        />
+        <Link
+          to={`/${currentRecipeDetails.name}/${currentRecipeDetails.id}/update`}
+        >
+          <button className={classes.backBtn} type="button">
+            Update Recipe
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };
