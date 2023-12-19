@@ -1,12 +1,13 @@
 .favBtn {
-  width: 200px;
-  height: 40px;
-  padding: 0.2rem 1rem;
+  width: fit-content;
+  height: fit-content;
   margin-top: 1rem;
-  background-color: #2a2e45;
+  background-color: transparent;
   color: #fff;
-  font-weight: bold;
   border: none;
-  border-radius: 0.25rem;
   cursor: pointer;
+}
+
+.favBtnImg {
+  height: 40px;
 }

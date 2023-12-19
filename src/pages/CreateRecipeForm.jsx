@@ -70,7 +70,9 @@ const CreateRecipeForm = ({ handleSubmit, recipeList }) => {
       {isCreateForm ? (
         <h2 className={classes.formHeader}>Add Your Recipe</h2>
       ) : (
-        <h2 className={classes.formHeader}>Update Your Recipe</h2>
+        <h2 className={classes.formHeader}>
+          Update Your {newRecipe.name} Recipe
+        </h2>
       )}
       <div className={classes.inputContainer}>
         <div className={classes.leftCtn}>
