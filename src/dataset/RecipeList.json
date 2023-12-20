@@ -20,7 +20,9 @@
     "protein": 10,
     "image": "https://i.imgur.com/eTmWoAN.png",
     "servings": 1,
-    "ingredients": ["1 Pizza"],
+    "ingredients": [
+      "1 Pizza"
+    ],
     "isFavorite": false
   },
   {
@@ -66,7 +68,10 @@
     "protein": 30,
     "image": "https://i.pinimg.com/originals/0a/1d/75/0a1d7504a40722499438321059e551ce.jpg",
     "servings": 3,
-    "ingredients": ["300g Chicken breast", "150ml Tomato sauce"],
+    "ingredients": [
+      "300g Chicken breast",
+      "150ml Tomato sauce"
+    ],
     "isFavorite": false
   },
   {
@@ -87,7 +92,10 @@
     "protein": 6,
     "image": "https://www.gimmesomeoven.com/wp-content/uploads/2016/01/Miso-Soup-Recipe-9.jpg",
     "servings": 2,
-    "ingredients": ["40g Miso paste", "50g Tofu"],
+    "ingredients": [
+      "40g Miso paste",
+      "50g Tofu"
+    ],
     "isFavorite": false
   },
   {
@@ -108,7 +116,10 @@
     "protein": 30,
     "image": "https://messinthekitchen.com/wp-content/uploads/2021/04/beef-stroganoff-feature.jpg",
     "servings": 4,
-    "ingredients": ["300g Beef", "100g Mushrooms"],
+    "ingredients": [
+      "300g Beef",
+      "100g Mushrooms"
+    ],
     "isFavorite": false
   },
   {
@@ -129,7 +140,10 @@
     "protein": 8,
     "image": "https://cdn.loveandlemons.com/wp-content/uploads/2020/08/quinoa-salad.jpg",
     "servings": 2,
-    "ingredients": ["100g Quinoa", "100g Mixed vegetables"],
+    "ingredients": [
+      "100g Quinoa",
+      "100g Mixed vegetables"
+    ],
     "isFavorite": false
   },
   {
@@ -150,7 +164,10 @@
     "protein": 20,
     "image": "https://www.recipetineats.com/wp-content/uploads/2020/01/Chicken-Pad-Thai_9-SQ.jpg",
     "servings": 3,
-    "ingredients": ["200g Rice noodles", "100g Shrimp"],
+    "ingredients": [
+      "200g Rice noodles",
+      "100g Shrimp"
+    ],
     "isFavorite": false
   },
   {
@@ -171,7 +188,10 @@
     "protein": 15,
     "image": "https://www.allrecipes.com/thmb/UeFtapHyGFBo4Lx-72GxgjrOGnk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/13978-lentil-soup-DDMFS-4x3-edfa47fc6b234e6b8add24d44c036d43.jpg",
     "servings": 4,
-    "ingredients": ["200g Lentils", "2 whole Carrots"],
+    "ingredients": [
+      "200g Lentils",
+      "2 whole Carrots"
+    ],
     "isFavorite": false
   },
   {
@@ -192,7 +212,10 @@
     "protein": 12,
     "image": "https://www.seriouseats.com/thmb/BJjCEDw9OZe95hpZxmNcD3rJnHo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20230529-SEA-EggFriedRice-AmandaSuarez-hero-c8d95fbf69314b318bc279159f582882.jpg",
     "servings": 2,
-    "ingredients": ["150g Rice", "2 whole Eggs"],
+    "ingredients": [
+      "150g Rice",
+      "2 whole Eggs"
+    ],
     "isFavorite": false
   },
   {
@@ -213,7 +236,10 @@
     "protein": 4,
     "image": "https://jackienewgent.com/wp-content/uploads/2014/06/Dark-Chocolate-Covered-Strawberry-Mousse-Pudding-1024x758.jpg",
     "servings": 4,
-    "ingredients": ["100g Dark chocolate", "200ml Heavy cream"],
+    "ingredients": [
+      "100g Dark chocolate",
+      "200ml Heavy cream"
+    ],
     "isFavorite": false
   },
   {
@@ -233,7 +259,10 @@
     "protein": 7,
     "image": "https://natashaskitchen.com/wp-content/uploads/2019/01/Caesar-Salad-Recipe-3.jpg",
     "servings": 2,
-    "ingredients": ["1 head Romaine lettuce", "50g Croutons"],
+    "ingredients": [
+      "1 head Romaine lettuce",
+      "50g Croutons"
+    ],
     "isFavorite": false
   },
   {
@@ -269,9 +298,14 @@
     "description": "This recipe is incredibly simple to make, and it's fat-free",
     "stepsToCook": [
       "Soak the kidney beans in water for 8 hours",
-      "Combine beans, 1 quart water, preserved lemon, sugar, black pepper, red chile pepper, bay leaf, garlic powder, and anise seed in a stockpot; bring to a boil.Reduce heat to low, cover stockpot, and simmer for 1 hour.",
-      "Remove lemon, bay leaf, and red chile pepper from bean mixture. Mash about 10% of the beans against the sides of the stockpot using the back of a spoon. Cover stockpot and simmer for 45 minutes more.",
-      "Remove cover from stockpot and simmer beans until beans are thickened and water is evaporated, about 15 minutes more."
+      "Combine beans, 1 quart water",
+      "Add lemon, sugar, black and red pepper, bay leaf, garlic powder.",
+      "Add anise seed and bring to a boil.",
+      "Reduce heat to low, cover stockpot, and simmer for 1 hour.",
+      "Remove lemon, bay leaf, and red chile pepper from bean mixture.",
+      "Mash about 10% of the beans.",
+      "Cover stockpot and simmer for 45 minutes more.",
+      "Remove cover from stockpot and simmer beans until beans are thickened."
     ],
     "calories": 278,
     "fat": 1,
@@ -282,10 +316,10 @@
     "ingredients": [
       "1 pound dried red kidney beans, rinsed",
       "2 quarts water",
-      "1 Moroccan-style preserved lemon, or to taste",
+      "1 Moroccan-style preserved lemon",
       "1 tablespoon white sugar",
-      "1 tablespoon freshly ground black pepper",
-      "1 small red chile pepper, halved lengthwise",
+      "1 tablespoon ground black pepper",
+      "1 small red chile pepper",
       "1 bay leaf",
       "1 teaspoon garlic powder",
       "1 teaspoon anise seed"
@@ -298,8 +332,9 @@
     "duration": "15 minutes",
     "description": "This innovative dish takes the essence of a traditional pizza and transforms it into a light, refreshing salad that's perfect for any occasion.",
     "stepsToCook": [
-      "Combine lettuce, salami, mozzarella cheese, Cheddar cheese, tomato, olives, and chives in a large bowl. Mix well to combine.",
-      "Make dressing: Whisk together tomato sauce, oil, vinegar, sugar, oregano, salt, garlic powder, and pepper in a medium bowl.",
+      "Combine lettuce, salami,cheese, tomato, olives, and chives.",
+      "Mix well to combine.",
+      "Whisk tomato sauce, oil, vinegar, sugar, oregano, salt, garlic powder.",
       "Pour enough dressing over lettuce mixture to coat; toss and serve."
     ],
     "calories": 475,
@@ -309,7 +344,7 @@
     "image": "https://www.allrecipes.com/thmb/R9PzQO3tvdz7APPbN1BEv74oC88=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/694594-681774411cba41c69a7202499d0791a4.jpg",
     "servings": 6,
     "ingredients": [
-      "1 head iceberg lettuce, torn into bite-sized pieces",
+      "1 head iceberg lettuce",
       "½ pound salami, cut into strips",
       "1 cup shredded mozzarella cheese",
       "1 cup shredded Cheddar cheese",
@@ -325,15 +360,25 @@
     "duration": "1 hour 20 minutes",
     "description": "Chicken biryani is a delicious Pakistani/Indian rice dish that's typically reserved for special occasions such as weddings, parties, or holidays such as Ramadan.",
     "stepsToCook": [
-      "Heat 2 tablespoons of oil in a large skillet. Fry potatoes in hot oil until lightly browned, about 3 to 5 minutes. Remove to a paper towel-lined plate to drain; set aside.",
-      "Add remaining 2 tablespoons of oil to the skillet. Add onions, garlic, and fresh ginger; cook and stir until onion is soft and golden. Add tomatoes, salt, cumin, chili powder, pepper, and turmeric; cook, stirring constantly, for 5 minutes.",
-      "Stir in yogurt, mint, ground cardamom, and cinnamon stick. Cover and cook over low heat, stirring occasionally, until tomatoes are cooked to a pulp. It may be necessary to add a little hot water if mixture becomes too dry and starts to stick to the pan.",
-      "Add chicken and stir well to coat. Cover and cook over very low heat until chicken is tender, 35 to 45 minutes. There should only be a little very thick gravy left when chicken is finished cooking. If necessary cook uncovered for a few minutes to reduce the gravy.",
-      "Meanwhile, make the rice: Wash rice well and drain in a colander for at least 30 minutes.",
-      "Heat oil in a large skillet. Add onion; cook and stir until golden. Add cardamom pods, cloves, cinnamon stick, ground ginger, and saffron; stir in rice until coated with spices.",
+      "Heat 2 tablespoons of oil in a large skillet.",
+      "Fry potatoes in hot oil until lightly browned, about 3 to 5 minutes.",
+      "Remove to a paper towel-lined plate to drain; set aside.",
+      "Add remaining 2 tablespoons of oil to the skillet.",
+      "Add onions, garlic, and fresh ginger.",
+      "Add tomatoes, salt, cumin, chili powder, pepper, and turmeric",
+      "Stir in yogurt, mint, ground cardamom, and cinnamon stick.",
+      "Cover and cook over low heat, stirring occasionally.",
+      "Add chicken and stir well to coat.",
+      "Cover and cook over very low heat until chicken is tender",
+      "Meanwhile, make the rice: Wash rice well and drain in a colander",
+      "Heat oil in a large skillet.",
+      "Add onion; cook and stir until golden.",
+      "Add cardamom pods, cloves, cinnamon stick, ground ginger,saffron",
+      "Stir in rice.",
       "Heat stock and salt in a medium pot until hot; pour over rice and stir well.",
-      "Add chicken mixture and potatoes; stir gently to combine. Bring to a boil.",
-      "Reduce heat to very low, cover with a tight-fitting lid, and steam for 20 minutes without lifting the lid or stirring.",
+      "Add chicken mixture and potatoes; stir gently to combine.",
+      "Bring to a boil.",
+      "Reduce heat to very low, and steam for 20 minutes.",
       "Spoon biryani onto a warm serving dish."
     ],
     "calories": 832,
@@ -344,11 +389,11 @@
     "servings": 6,
     "ingredients": [
       "4 tablespoons vegetable oil",
-      "4 small potatoes, peeled and halved",
+      "4 small potatoes",
       "2 large onions, finely chopped",
       "2 cloves garlic, minced",
-      "1 tablespoon minced fresh ginger root",
-      "2 medium tomatoes, peeled and chopped",
+      "1 tablespoon fresh ginger root",
+      "2 medium tomatoes",
       "1 teaspoon salt",
       "1 teaspoon ground cumin",
       "1 teaspoon chili powder",
@@ -358,7 +403,7 @@
       "2 tablespoons chopped fresh mint leaves",
       "1 teaspoon ground cardamom",
       "1 piece cinnamon stick",
-      "3 pounds boneless, skinless chicken pieces cut into chunks"
+      "3 pounds chicken pieces cut into chunks"
     ],
     "isFavorite": false
   },
@@ -368,10 +413,22 @@
     "duration": "15 minutes",
     "description": "These Mexican street corn deviled eggs have all the fresh flavors of your favorite street food, and everybody loves deviled eggs",
     "stepsToCook": [
-      "Place eggs in a saucepan and cover with water. Bring to a boil, remove from heat, and let eggs stand in hot water for 15 minutes. Remove eggs from hot water, cool under cold running water, and peel. Cut eggs in half lengthwise.",
-      "Remove yolks to a small mixing bowl; mash with a fork. Add in Mexican street corn dip, mayonnaise, and lime juice. Stir together with a fork until fairly smooth; stir in 2 teaspoons of cotija cheese.",
-      "Fit a piping bag with a coupler and a tip with a fairly large opening. Drop piping bag into a tall glass and fold edges down around the glass. Spoon egg yolk filling into the bag. Gather edges and twist together. Pipe filling into egg whites. Alternately, spoon filling into a resealable plastic bag, press to remove excess air, and reseal. Cut one corner of bag off, and pipe filling into egg whites. Or, simply spoon filling into egg whites.",
-      "Sprinkle remaining cotija cheese over eggs; scatter on onion slivers and cilantro. Sprinkle with Tajin® seasoning and serve."
+      "Place eggs in a saucepan and cover with water.",
+      "Bring to a boil, remove from heat",
+      "Peel the eggs",
+      "Cut eggs in half lengthwise.",
+      "Remove yolks and mash with a fork.",
+      "Add in the corn dip, mayonnaise, and lime juice.",
+      "Stir together with a fork until fairly smooth",
+      "stir in 2 teaspoons of cotija cheese.",
+      "Fit a piping bag with a coupler.",
+      "Drop piping bag into a tall glass.",
+      "Spoon egg yolk filling into the bag.",
+      "Gather edges and twist together.",
+      "Pipe filling into egg whites.",
+      "Sprinkle remaining cotija cheese over eggs",
+      "Scatter on onion slivers and cilantro.",
+      "Sprinkle with Tajin seasoning and serve."
     ],
     "calories": 151,
     "fat": 13,
@@ -387,7 +444,7 @@
       "1 tablespoon crumbled cotija cheese, divided",
       "1 tablespoon slivered red onion",
       "2 teaspoons chopped cilantro",
-      "1 teaspoon chili-lime seasoning, such as Tajin® Clásico Seasoning"
+      "1 teaspoon chili-lime seasoning"
     ],
     "isFavorite": false
   },
@@ -397,9 +454,15 @@
     "duration": "20 minutes",
     "description": "5 ingredients and water is all you'll need to get this 5 ingredient cheesy taco soup on the dinner table in no time.",
     "stepsToCook": [
-      "Crumble ground beef in a soup pot over medium-high heat. Add taco seasoning packet. Cook until beef is no longer pink, about 5 minutes.",
-      "Drain grease and add beef mixture back to the pot. Stir in pinto beans, salsa, cheese dip, and water.",
-      "Bring to a boil. Reduce heat and simmer for 15 minutes. Ladle into bowls and top with toppings of choice."
+      "Crumble ground beef in a soup pot over medium-high heat.",
+      "Add taco seasoning packet.",
+      "Cook until beef is no longer pink, about 5 minutes.",
+      "Drain grease and add beef mixture back to the pot.",
+      "Stir in pinto beans, salsa, cheese dip, and water.",
+      "Bring to a boil.",
+      "Reduce heat and simmer for 15 minutes.",
+      "Meanwhile, make the rice: Wash rice well and drain the water",
+      "Ladle into bowls and top with toppings of choice."
     ],
     "calories": 546,
     "fat": 20,
@@ -409,9 +472,9 @@
     "servings": 4,
     "ingredients": [
       "1 pound lean ground beef",
-      "1 (1 ounce) packet taco seasoning",
-      "1 (15 1/2 ounce) can pinto beans, undrained",
-      "1 (24 ounce) jar black bean and corn salsa",
+      "1 packet taco seasoning",
+      "1 can pinto beans",
+      "1 jar black bean and corn salsa",
       "3/4 cup prepared salsa con queso dip",
       "1 1/2 cups water"
     ],
@@ -423,9 +486,14 @@
     "duration": "4 hour 15 minutes",
     "description": "These Mexican pinwheel appetizers feature chicken, cream cheese, and Cheddar. They are fast to assemble and loaded with Mexican flavors!",
     "stepsToCook": [
-      "Blend cream cheese, sour cream, smoked paprika, onion powder, and Aleppo pepper together in a small bowl. ",
-      "Lay tortillas out on a cutting board. Spread cream cheese mixture evenly over tortillas. Divide RO*TEL, Cheddar cheese, chicken strips, and guacamole evenly among tortillas.",
-      "Roll up pinwheels tightly. Refrigerate for 4 hours. Cut into 1-inch rounds. Enjoy!"
+      "Blend cream cheese, cream,paprika",
+      "Add onion powder, Aleppo pepper to the mixture.",
+      "Lay tortillas out on a cutting board.",
+      "Spread cream cheese mixture evenly over tortillas.",
+      "Divide RO*TEL,cheese, chicken strips, and guacamole on tortillas.",
+      "Roll up pinwheels tightly. Refrigerate for 4 hours.",
+      "Cut into 1-inch rounds.",
+      "Enjoy!"
     ],
     "calories": 383,
     "fat": 23,
@@ -434,17 +502,17 @@
     "image": "https://www.allrecipes.com/thmb/oJ7yY8kA9Y4OOwbhKhAEVPLvEa0=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/7505052_Mexican-Pinwheels_Thedailygourmet_4x3-2500df5ba35547a6a46e2e7c8ad038e1.jpg",
     "servings": 4,
     "ingredients": [
-      "1/2 cup cream cheese, softened",
+      "1/2 cup cream cheese",
       "1/2 cup sour cream",
       "2 teaspoons smoked paprika",
       "1 teaspoon onion powder",
       "1 teaspoon garlic powder",
       "1 pinch Aleppo pepper",
       "5 sundried tomato tortilla wraps",
-      "1/2 cup diced tomatoes with green chilies (such as RO*TEL® Tomatoes and Green Chilies), drained",
+      "1/2 cup diced tomatoes with green chilies",
       "8 ounces Cheddar cheese, shredded",
       "8 ounces grilled chicken breast strips",
-      "1/2 cup guacamole, or as needed (optional)"
+      "1/2 cup guacamole, or as needed"
     ],
     "isFavorite": false
   }
