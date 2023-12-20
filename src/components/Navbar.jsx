@@ -10,7 +10,7 @@ const Navbar = () => {
       <Link className={classes.cntLink} to="/">
         <img
           className={classes.navbarImage}
-          src={recipeBookLogo}
+          src="https://i.ibb.co/HNxVkPR/Screenshot-2023-12-20-at-13-01-48-removebg-preview.png"
           alt="Recipe Book Logo"
         />
         <h1 className={classes.h1text}>Delicious Hack</h1>
